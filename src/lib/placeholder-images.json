@@ -1,3 +1,76 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "seafood",
+      "description": "A close-up of a grilled fish with lemon slices",
+      "imageUrl": "https://images.unsplash.com/photo-1600175074394-f2f4c500f7ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxncmlsbGVkJTIwZmlzaHxlbnwwfHx8fDE3Njg2NzkyNTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "grilled fish"
+    },
+    {
+      "id": "grains",
+      "description": "A wooden bowl filled with various types of grains",
+      "imageUrl": "https://images.unsplash.com/photo-1765144815957-6bc44c13fc2c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhc3NvcnRlZCUyMGdyYWluc3xlbnwwfHx8fDE3Njg3MzY5OTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "assorted grains"
+    },
+    {
+      "id": "nuts",
+      "description": "A mix of almonds, walnuts, and cashews in a bowl",
+      "imageUrl": "https://images.unsplash.com/photo-1542990253-a781e04c0082?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtaXhlZCUyMG51dHN8ZW58MHx8fHwxNzY4NjM3MTUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mixed nuts"
+    },
+    {
+      "id": "fruits",
+      "description": "A colorful arrangement of fresh fruits on a table",
+      "imageUrl": "https://images.unsplash.com/photo-1601379760607-78be3d4ff432?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmcmVzaCUyMGZydWl0fGVufDB8fHx8MTc2ODczNjk5MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fresh fruit"
+    },
+    {
+      "id": "vegetables",
+      "description": "A basket of fresh and colorful vegetables",
+      "imageUrl": "https://images.unsplash.com/photo-1592924802543-809bfeee53fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmcmVzaCUyMHZlZ2V0YWJsZXN8ZW58MHx8fHwxNzY4NzEwNjU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fresh vegetables"
+    },
+    {
+      "id": "meat",
+      "description": "A perfectly cooked steak sliced on a wooden board",
+      "imageUrl": "https://images.unsplash.com/photo-1558030006-450675393462?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncmlsbGVkJTIwc3RlYWt8ZW58MHx8fHwxNzY4NzM2OTkwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "grilled steak"
+    },
+    {
+      "id": "beverages",
+      "description": "A collection of different glasses with various drinks",
+      "imageUrl": "https://images.unsplash.com/photo-1627880024532-4d7d2b1a23b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YXNzb3J0ZWQlMjBkcmlua3N8ZW58MHx8fHwxNzY4NzM2OTkwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "assorted drinks"
+    },
+    {
+      "id": "legumes",
+      "description": "An assortment of dried beans and lentils in bowls",
+      "imageUrl": "https://images.unsplash.com/photo-1710857397974-f0617001c39e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZHJpZWQlMjBsZWd1bWVzfGVufDB8fHx8MTc2ODczNjk5MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dried legumes"
+    },
+    {
+      "id": "dairy",
+      "description": "A glass of milk next to a wedge of cheese and yogurt",
+      "imageUrl": "https://images.unsplash.com/photo-1550630997-aea8d3d982ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxkYWlyeSUyMHByb2R1Y3RzfGVufDB8fHx8MTc2ODczNjk5MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dairy products"
+    },
+    {
+      "id": "other",
+      "description": "A generic image of a prepared meal on a plate",
+      "imageUrl": "https://images.unsplash.com/photo-1668838352480-c9fb3048053a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwcmVwYXJlZCUyMG1lYWx8ZW58MHx8fHwxNzY4NzM2OTkwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "prepared meal"
+    },
+    {
+      "id": "gout-info",
+      "description": "A diagram of a human joint with inflammation",
+      "imageUrl": "https://images.unsplash.com/photo-1627485805257-0460307e6b43?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxqb2ludCUyMGluZmxhbW1hdGlvbnxlbnwwfHx8fDE3Njg3MzY5OTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "joint inflammation"
+    },
+    {
+      "id": "food-detail-hero",
+      "description": "A generic hero image for a food item detail page",
+      "imageUrl": "https://images.unsplash.com/photo-1556386734-4227a180d19e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxoZWFsdGh5JTIwZm9vZHxlbnwwfHx8fDE3Njg2MTk2Njl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "healthy food"
+    }
+  ]
 }
