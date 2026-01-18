@@ -13,7 +13,11 @@ import {z} from 'genkit';
 
 const IntelligentFoodSearchInputSchema = z.object({
   query: z.string().describe('The user\u0027s search query for food items.'),
-  foodList: z.string().describe('A list of food items with their purine content (name, purine_level).'),
+  foodList: z
+    .string()
+    .describe(
+      'A list of food items with their purine content (name, purine_level).'
+    ),
 });
 export type IntelligentFoodSearchInput = z.infer<
   typeof IntelligentFoodSearchInputSchema
@@ -22,7 +26,11 @@ export type IntelligentFoodSearchInput = z.infer<
 const IntelligentFoodSearchOutputSchema = z.array(
   z.object({
     name: z.string().describe('The name of the food item.'),
-    purine_level: z.string().describe('The purine level of the food item (low, medium, high).'),
+    purine_level: z
+      .string()
+      .describe(
+        'The purine level of the food item (low, medium, high, very high).'
+      ),
   })
 );
 export type IntelligentFoodSearchOutput = z.infer<
@@ -51,7 +59,7 @@ const prompt = ai.definePrompt({
   {{foodList}}
 
   Identify the food items from the list that are most relevant to the query.
-  Return a JSON array of food items with their purine levels that best match the search query.
+  Return ONLY a JSON array of food items with their purine levels that best match the search query. Your response must be a valid JSON array and nothing else.
 `,
 });
 
