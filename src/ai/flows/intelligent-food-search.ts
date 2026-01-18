@@ -63,13 +63,17 @@ const intelligentFoodSearchFlow = ai.defineFlow(
   },
   async input => {
     try {
-      // Parse the foodList string into a JSON array
+      // Validate that foodList is a valid JSON string.
       JSON.parse(input.foodList);
-    } catch (e) {
-      throw new Error('foodList is not a valid JSON string.');
+      
+      const {output} = await prompt(input);
+
+      // If the model returns no output, return an empty array.
+      return output || [];
+    } catch (error) {
+      console.error('Error in intelligentFoodSearchFlow:', error);
+      // Re-throw the error to allow the caller to handle fallbacks.
+      throw error;
     }
-    const {output} = await prompt(input);
-    return output!;
   }
 );
-
