@@ -1,6 +1,15 @@
+'use client';
+
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import { useEffect, useState } from 'react';
 
 export default function TermsAndConditionsPage() {
+  const [lastUpdated, setLastUpdated] = useState('');
+
+  useEffect(() => {
+    setLastUpdated(new Date().toLocaleDateString());
+  }, []);
+
   return (
     <div className="space-y-8">
       <header className="space-y-2">
@@ -8,7 +17,7 @@ export default function TermsAndConditionsPage() {
           Terms and Conditions
         </h1>
         <p className="text-lg text-muted-foreground">
-          Last updated: {new Date().toLocaleDateString()}
+          Last updated: {lastUpdated}
         </p>
       </header>
       <Card>

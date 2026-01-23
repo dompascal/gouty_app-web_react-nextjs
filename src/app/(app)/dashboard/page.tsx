@@ -1,40 +1,8 @@
 import { Suspense } from 'react';
-import { foodData } from '@/lib/data';
-import type { FoodItem } from '@/lib/types';
-import { searchFoodsAction } from '@/app/actions';
 import FoodSearch from '@/components/food-search';
 import FoodFilters from '@/components/food-filters';
 import FoodList from '@/components/food-list';
 import { Skeleton } from '@/components/ui/skeleton';
-
-async function getFoods({
-  query,
-  level,
-}: {
-  query?: string;
-  level?: string;
-}): Promise<FoodItem[]> {
-  let foods: FoodItem[];
-
-  if (query) {
-    foods = await searchFoodsAction(query);
-  } else {
-    foods = foodData;
-  }
-
-  if (level && level !== 'all') {
-    const lowerCaseLevel = level.toLowerCase();
-    return foods.filter((food) => {
-      const foodLevel = food.purineLevel.toLowerCase();
-      if (lowerCaseLevel === 'high') {
-        return foodLevel === 'high' || foodLevel === 'very high';
-      }
-      return foodLevel === lowerCaseLevel;
-    });
-  }
-
-  return foods;
-}
 
 function FoodListSkeleton() {
   return (
@@ -55,13 +23,13 @@ function FoodListSkeleton() {
 export default async function DashboardPage({
   searchParams,
 }: {
-  searchParams?: {
+  searchParams: {
     query?: string;
     level?: string;
   };
 }) {
-  const query = searchParams?.query || '';
-  const level = searchParams?.level || 'all';
+  const query = searchParams.query || '';
+  const level = searchParams.level || 'all';
 
   return (
     <div className="space-y-8">
