@@ -11,6 +11,7 @@ import { ArrowLeft, Beef, Carrot, Coffee, Fish, Leaf, Milk, Apple, Wheat } from 
 import type { LucideIcon } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { cn } from '@/lib/utils';
+import AddToDiaryButton from '@/components/diary/add-to-diary-button';
 
 function getFoodBySlug(slug: string): FoodItem | undefined {
   const name = decodeURIComponent(slug);
@@ -75,12 +76,15 @@ export default function FoodDetailPage({ params }: { params: { slug: string } })
 
   return (
     <div className="space-y-8">
-      <Button asChild variant="outline" size="sm">
-        <Link href="/dashboard">
-          <ArrowLeft />
-          Back to Directory
-        </Link>
-      </Button>
+      <div className="flex justify-between items-center">
+        <Button asChild variant="outline" size="sm">
+          <Link href="/dashboard">
+            <ArrowLeft />
+            Back to Directory
+          </Link>
+        </Button>
+        <AddToDiaryButton food={food} />
+      </div>
 
       <header className="relative -mx-4 sm:-mx-6 lg:-mx-8 aspect-[5/2] max-h-[400px] overflow-hidden rounded-lg">
         {foodImage && (

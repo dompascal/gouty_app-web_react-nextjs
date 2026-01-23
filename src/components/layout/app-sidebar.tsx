@@ -10,11 +10,12 @@ import {
   SidebarMenuButton,
   SidebarFooter,
 } from '@/components/ui/sidebar';
-import { LayoutDashboard, HeartPulse, Utensils } from 'lucide-react';
+import { LayoutDashboard, HeartPulse, Utensils, BookHeart } from 'lucide-react';
 import Link from 'next/link';
 
 const menuItems = [
   { href: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
+  { href: '/diary', label: 'Food Diary', icon: BookHeart },
   { href: '/gout-info', label: 'Gout Info', icon: HeartPulse },
 ];
 
@@ -33,7 +34,7 @@ export default function AppSidebar() {
             <SidebarMenuItem key={item.href}>
               <SidebarMenuButton
                 asChild
-                isActive={pathname === item.href}
+                isActive={pathname.startsWith(item.href)}
                 tooltip={{ children: item.label, side: 'right' }}
               >
                 <Link href={item.href}>

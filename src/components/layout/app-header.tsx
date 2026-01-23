@@ -3,6 +3,7 @@
 import { SidebarTrigger } from '@/components/ui/sidebar';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { Utensils } from 'lucide-react';
+import UserAvatar from '@/components/auth/user-avatar';
 
 export default function AppHeader() {
   const isMobile = useIsMobile();
@@ -14,6 +15,9 @@ export default function AppHeader() {
         <h1 className="font-headline text-xl font-bold tracking-tighter text-foreground">
           Gouty
         </h1>
+      </div>
+      <div className="ml-auto flex items-center gap-4">
+        <UserAvatar />
       </div>
     </header>
   );

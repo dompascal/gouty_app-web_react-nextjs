@@ -1,0 +1,76 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "User Profile",
+      "description": "Represents a user's public profile.",
+      "type": "object",
+      "properties": {
+        "uid": {
+          "type": "string",
+          "description": "The user's unique ID."
+        },
+        "displayName": {
+          "type": "string",
+          "description": "The user's display name."
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "description": "The user's email address."
+        },
+        "photoURL": {
+          "type": "string",
+          "format": "uri",
+          "description": "The URL of the user's profile picture."
+        }
+      },
+      "required": ["uid", "displayName", "email"]
+    },
+    "DiaryEntry": {
+      "title": "Food Diary Entry",
+      "description": "Represents a single food entry in a user's diary.",
+      "type": "object",
+      "properties": {
+        "foodName": {
+          "type": "string"
+        },
+        "purines": {
+          "type": "number"
+        },
+        "purineLevel": {
+          "type": "string",
+          "enum": ["Low", "Medium", "High", "Very High"]
+        },
+        "category": {
+          "type": "string"
+        },
+        "servingSize": {
+          "type": "number",
+          "description": "Serving size in grams."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": ["foodName", "purines", "purineLevel", "category", "servingSize", "createdAt"]
+    }
+  },
+  "auth": {
+    "providers": ["google.com"]
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": {
+        "$ref": "#/entities/UserProfile"
+      },
+      "description": "Stores user profile information."
+    },
+    "/users/{userId}/diaryEntries/{entryId}": {
+      "schema": {
+        "$ref": "#/entities/DiaryEntry"
+      },
+      "description": "Stores food diary entries for a specific user."
+    }
+  }
+}
