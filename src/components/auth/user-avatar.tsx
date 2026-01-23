@@ -15,7 +15,8 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { Button } from '@/components/ui/button';
 import { useUser } from '@/firebase/auth/use-user';
-import { getAuth, signOut } from 'firebase/auth';
+import { useAuth } from '@/firebase';
+import { signOut } from 'firebase/auth';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { Skeleton } from '../ui/skeleton';
@@ -23,7 +24,7 @@ import { Skeleton } from '../ui/skeleton';
 export default function UserAvatar() {
   const { user, loading } = useUser();
   const router = useRouter();
-  const auth = getAuth();
+  const auth = useAuth();
 
   const handleSignOut = async () => {
     await signOut(auth);

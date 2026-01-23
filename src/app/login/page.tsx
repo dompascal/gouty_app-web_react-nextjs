@@ -2,8 +2,9 @@
 
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { GoogleAuthProvider, signInWithRedirect, getAuth, getRedirectResult } from 'firebase/auth';
+import { GoogleAuthProvider, signInWithRedirect, getRedirectResult } from 'firebase/auth';
 import { useUser } from '@/firebase/auth/use-user';
+import { useAuth } from '@/firebase';
 import { Button } from '@/components/ui/button';
 import { Utensils } from 'lucide-react';
 import { upsertUserProfile } from '@/firebase/firestore';
@@ -12,7 +13,7 @@ import { useToast } from '@/hooks/use-toast';
 export default function LoginPage() {
   const router = useRouter();
   const { user, loading: userLoading } = useUser();
-  const auth = getAuth();
+  const auth = useAuth();
   const { toast } = useToast();
   // State to track if we're processing the redirect result.
   const [processingRedirect, setProcessingRedirect] = useState(true);
@@ -28,7 +29,7 @@ export default function LoginPage() {
             title: 'Signed in successfully!',
             description: `Welcome back, ${result.user.displayName}.`,
           });
-          router.push('/dashboard');
+          // The redirect to dashboard will be handled by the next useEffect
         } else {
           // Not a redirect flow, or the result has been handled.
           setProcessingRedirect(false);
@@ -47,7 +48,7 @@ export default function LoginPage() {
 
   useEffect(() => {
     // If a user is logged in (and we're not processing a redirect), go to the dashboard.
-    // This handles users who are already logged in and visit /login.
+    // This handles users who are already logged in and visit /login, or after a successful redirect.
     if (user && !processingRedirect) {
       router.push('/dashboard');
     }
