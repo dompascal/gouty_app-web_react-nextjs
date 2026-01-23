@@ -74,7 +74,7 @@ function HeroSlideshow() {
       <CarouselContent>
         {slides.map(({ food, image }) => (
           <CarouselItem key={food.name}>
-            <div className="relative aspect-[5/2] max-h-[400px]">
+            <div className="relative h-[50vh]">
               <Image
                 src={image.imageUrl}
                 alt={food.name}
