@@ -12,7 +12,7 @@ export default function AppHeader() {
       <div className="flex items-center gap-2">
         <Utensils className="h-6 w-6 text-primary" />
         <h1 className="font-headline text-xl font-bold tracking-tighter text-foreground">
-          PurinePilot
+          Gouty
         </h1>
       </div>
     </header>

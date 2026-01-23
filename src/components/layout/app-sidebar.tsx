@@ -25,7 +25,7 @@ export default function AppSidebar() {
     <Sidebar>
       <SidebarHeader className="hidden md:flex md:items-center md:gap-2">
          <Utensils className="h-7 w-7 text-primary" />
-         <span className="font-headline text-lg font-bold">PurinePilot</span>
+         <span className="font-headline text-lg font-bold">Gouty</span>
       </SidebarHeader>
       <SidebarContent>
         <SidebarMenu>
@@ -46,7 +46,7 @@ export default function AppSidebar() {
         </SidebarMenu>
       </SidebarContent>
       <SidebarFooter className="hidden md:flex">
-        <p className="px-2 text-xs text-muted-foreground">© 2024 PurinePilot</p>
+        <p className="px-2 text-xs text-muted-foreground">© 2024 Gouty</p>
       </SidebarFooter>
     </Sidebar>
   );

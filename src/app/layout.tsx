@@ -3,7 +3,7 @@ import { Toaster } from '@/components/ui/toaster';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'PurinePilot',
+  title: 'Gouty',
   description: 'Manage your gout by understanding purine content in your food.',
 };
 
