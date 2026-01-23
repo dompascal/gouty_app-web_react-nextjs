@@ -1,6 +1,7 @@
 'use client';
 import { useUser } from '@/firebase/auth/use-user';
 import { useRouter } from 'next/navigation';
+import { useEffect } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Skeleton } from '@/components/ui/skeleton';
@@ -9,7 +10,13 @@ export default function AccountPage() {
   const { user, loading } = useUser();
   const router = useRouter();
 
-  if (loading) {
+  useEffect(() => {
+    if (!user && !loading) {
+      router.push('/login');
+    }
+  }, [user, loading, router]);
+
+  if (loading || !user) {
     return (
         <div className="space-y-8">
             <header className="space-y-2">
@@ -31,15 +38,6 @@ export default function AccountPage() {
             </Card>
         </div>
     );
-  }
-
-  if (!user && !loading) {
-    router.push('/login');
-    return null;
-  }
-  
-  if (!user) {
-    return null;
   }
 
   return (

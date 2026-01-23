@@ -3,7 +3,7 @@ import { useUser } from '@/firebase/auth/use-user';
 import { useRouter } from 'next/navigation';
 import { useFirestore, useCollection } from '@/firebase';
 import { collection, query, orderBy } from 'firebase/firestore';
-import { useMemo } from 'react';
+import { useMemo, useEffect } from 'react';
 import type { DiaryEntry } from '@/firebase/firestore';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
@@ -50,6 +50,12 @@ export default function DiaryPage() {
   const router = useRouter();
   const firestore = useFirestore();
 
+  useEffect(() => {
+    if (!user && !userLoading) {
+      router.push('/login');
+    }
+  }, [user, userLoading, router]);
+
   const diaryQuery = useMemo(() => {
     if (!user) return null;
     return query(collection(firestore, 'users', user.uid, 'diaryEntries'), orderBy('createdAt', 'desc'));
@@ -57,7 +63,7 @@ export default function DiaryPage() {
 
   const { data: diaryEntries, loading: entriesLoading } = useCollection<DiaryEntry>(diaryQuery);
 
-  if (userLoading || (user && entriesLoading)) {
+  if (userLoading || !user || (user && entriesLoading)) {
     return (
         <div className="space-y-8">
             <header className="space-y-2">
@@ -71,11 +77,6 @@ export default function DiaryPage() {
             <DiarySkeleton />
         </div>
     )
-  }
-
-  if (!user && !userLoading) {
-    router.push('/login');
-    return null;
   }
 
   return (
