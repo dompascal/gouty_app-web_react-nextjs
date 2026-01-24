@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { GoogleAuthProvider, signInWithRedirect, getRedirectResult } from 'firebase/auth';
+import { GoogleAuthProvider, signInWithRedirect, getRedirectResult, User } from 'firebase/auth';
 import { useUser } from '@/firebase/auth/use-user';
 import { useAuth } from '@/firebase';
 import { Button } from '@/components/ui/button';
@@ -15,53 +15,52 @@ export default function LoginPage() {
   const { user, loading: userLoading } = useUser();
   const auth = useAuth();
   const { toast } = useToast();
-  // State to track if we're processing the login flow.
-  const [isProcessingLogin, setIsProcessingLogin] = useState(true);
+  // We use this state to show a spinner while we check for a redirect result.
+  const [isCheckingRedirect, setIsCheckingRedirect] = useState(true);
 
+  // This effect handles redirecting the user if they are logged in.
   useEffect(() => {
-    // If we have a user object, the session is active. Redirect to dashboard.
     if (user) {
       router.push('/dashboard');
-      return;
     }
+  }, [user, router]);
 
-    // Only process redirect result if user loading is complete and no user was found.
-    if (!userLoading && !user) {
-      getRedirectResult(auth)
-        .then(async (result) => {
-          if (result && result.user) {
-            // This was a successful sign-in via redirect.
-            // Persist the user profile.
-            await upsertUserProfile(result.user);
-            toast({
-              title: 'Signed in successfully!',
-              description: `Welcome back, ${result.user.displayName}.`,
-            });
-            // The `user` object from the `useUser` hook will now update,
-            // which will trigger this effect to re-run and handle the redirect.
-          } else {
-            // This was not a redirect, or the redirect was already handled.
-            // It's now safe to show the login page.
-            setIsProcessingLogin(false);
-          }
-        })
-        .catch((error) => {
-          console.error('Error handling redirect result:', error);
+  // This effect runs once on mount to process the sign-in redirect.
+  useEffect(() => {
+    // Avoid running this if the user is already loaded or we've already checked.
+    if (user || !isCheckingRedirect) return;
+
+    getRedirectResult(auth)
+      .then(async (result) => {
+        if (result?.user) {
+          // A user signed in via redirect.
+          // Persist their profile. The useUser hook will handle the user state update
+          // and the other effect will trigger the redirect.
+          await upsertUserProfile(result.user);
           toast({
-            variant: 'destructive',
-            title: 'Sign-in failed',
-            description: error.message || 'An unexpected error occurred during sign-in.',
+            title: 'Signed in successfully!',
+            description: `Welcome back, ${result.user.displayName}.`,
           });
-          setIsProcessingLogin(false);
+        }
+        // Whether there was a redirect or not, we're done checking.
+        setIsCheckingRedirect(false);
+      })
+      .catch((error) => {
+        console.error('Error handling redirect result:', error);
+        toast({
+          variant: 'destructive',
+          title: 'Sign-in failed',
+          description: error.message || 'An unexpected error occurred during sign-in.',
         });
-    }
-  }, [user, userLoading, auth, router, toast]);
+        setIsCheckingRedirect(false);
+      });
+  }, [auth, toast, user, isCheckingRedirect]); // Dependencies ensure it runs correctly.
 
   const handleSignIn = async () => {
     const provider = new GoogleAuthProvider();
     try {
-      // Set state to show loader immediately on click
-      setIsProcessingLogin(true);
+      // Set a loading state immediately on click.
+      setIsCheckingRedirect(true);
       await signInWithRedirect(auth, provider);
     } catch (error) {
       console.error('Error during sign-in:', error);
@@ -70,24 +69,14 @@ export default function LoginPage() {
         title: 'Sign-in failed',
         description: 'Could not initiate Google Sign-in.',
       });
-      // Revert loader state on error
-      setIsProcessingLogin(false);
+      // Revert loading state on error
+      setIsCheckingRedirect(false);
     }
   };
 
-  // Show a loading state while checking user status or processing the redirect.
-  if (userLoading || isProcessingLogin) {
+  // Show a loading state while checking user status or processing the redirect, or if user is loaded and we are about to redirect.
+  if (userLoading || isCheckingRedirect || user) {
     return (
-      <div className="flex min-h-screen flex-col items-center justify-center">
-        <Utensils className="h-12 w-12 animate-pulse text-primary" />
-      </div>
-    );
-  }
-
-  // This is a safeguard against the login button flashing briefly if the
-  // user object is populated but the effect hasn't redirected yet.
-  if (user) {
-     return (
       <div className="flex min-h-screen flex-col items-center justify-center">
         <Utensils className="h-12 w-12 animate-pulse text-primary" />
       </div>
@@ -104,7 +93,7 @@ export default function LoginPage() {
             Sign in to track your food diary and manage your health.
           </p>
         </div>
-        <Button onClick={handleSignIn} className="w-full" size="lg">
+        <Button onClick={handleSignIn} className="w-full" size="lg" disabled={isCheckingRedirect}>
           Sign In with Google
         </Button>
       </div>
