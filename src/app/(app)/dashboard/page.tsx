@@ -49,11 +49,20 @@ const categoryImageMap: Record<string, string> = {
 };
 
 function HeroSlideshow() {
-  const lowPurineFoods = foodData
-    .filter((f) => f.purineLevel === 'Low')
-    .slice(0, 5);
+  const lowPurineFoods = foodData.filter((f) => f.purineLevel === 'Low');
+  
+  const uniqueCategoryFoods: FoodItem[] = [];
+  const seenCategories = new Set<string>();
 
-  const slides = lowPurineFoods
+  for (const food of lowPurineFoods) {
+    if (uniqueCategoryFoods.length >= 5) break;
+    if (!seenCategories.has(food.category)) {
+      uniqueCategoryFoods.push(food);
+      seenCategories.add(food.category);
+    }
+  }
+
+  const slides = uniqueCategoryFoods
     .map((food) => {
       const imageId = categoryImageMap[food.category] || 'other';
       const image = PlaceHolderImages.find((p) => p.id === imageId);
@@ -66,7 +75,7 @@ function HeroSlideshow() {
 
   return (
     <Carousel
-      className="w-full -mx-4 sm:-mx-6 lg:-mx-8 overflow-hidden"
+      className="w-full"
       opts={{
         loop: true,
       }}
@@ -122,28 +131,29 @@ export default function DashboardPage({
   const level = searchParams.level || 'all';
 
   return (
-    <div className="space-y-8">
+    <div className="-mt-4 -mx-4 sm:-mt-6 sm:-mx-6 lg:-mt-8 lg:-mx-8">
       <HeroSlideshow />
+      <div className="p-4 sm:p-6 lg:p-8 space-y-8">
+        <header className="space-y-2 text-center">
+          <h1 className="font-headline text-3xl font-bold tracking-tight md:text-4xl">
+            Food Purine Directory
+          </h1>
+          <p className="text-lg text-muted-foreground">
+            Search for foods and learn about their purine content.
+          </p>
+        </header>
 
-      <header className="space-y-2 text-center">
-        <h1 className="font-headline text-3xl font-bold tracking-tight md:text-4xl">
-          Food Purine Directory
-        </h1>
-        <p className="text-lg text-muted-foreground">
-          Search for foods and learn about their purine content.
-        </p>
-      </header>
-
-      <div className="space-y-4">
-        <div className="flex flex-col gap-4 md:flex-row">
-          <FoodSearch placeholder="Search for foods like 'chicken' or 'salmon'..." />
+        <div className="space-y-4">
+          <div className="flex flex-col gap-4 md:flex-row">
+            <FoodSearch placeholder="Search for foods like 'chicken' or 'salmon'..." />
+          </div>
+          <FoodFilters />
         </div>
-        <FoodFilters />
-      </div>
 
-      <Suspense key={query + level} fallback={<FoodListSkeleton />}>
-        <FoodList query={query} level={level} />
-      </Suspense>
+        <Suspense key={query + level} fallback={<FoodListSkeleton />}>
+          <FoodList query={query} level={level} />
+        </Suspense>
+      </div>
     </div>
   );
 }
