@@ -66,7 +66,7 @@ function HeroSlideshow() {
 
   return (
     <Carousel
-      className="w-full -mx-4 sm:-mx-6 lg:-mx-8 rounded-lg overflow-hidden"
+      className="w-full -mx-4 sm:-mx-6 lg:-mx-8 overflow-hidden"
       opts={{
         loop: true,
       }}
@@ -108,7 +108,7 @@ function HeroSlideshow() {
 }
 
 
-export default async function DashboardPage({
+export default function DashboardPage({
   searchParams,
 }: {
   searchParams: {
