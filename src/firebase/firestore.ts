@@ -23,15 +23,11 @@ export type DiaryEntry = {
 };
 
 
-export async function addDiaryEntry(
+export function addDiaryEntry(
   userId: string,
   food: FoodItem,
   servingSize: number
 ) {
-  if (!userId) {
-    throw new Error('You must be logged in to add a diary entry.');
-  }
-  
   const diaryCollection = collection(firestore, 'users', userId, 'diaryEntries');
   const entryData = {
     foodName: food.name,
@@ -57,7 +53,7 @@ function createDisplayNameFromEmail(email: string): string {
   return email.split('@')[0].replace(/[^a-zA-Z0-9]/g, ' ').replace(/\s+/g, ' ').trim();
 }
 
-export async function upsertUserProfile(user: User) {
+export function upsertUserProfile(user: User) {
   const userRef = doc(firestore, 'users', user.uid);
   
   // If the user signed up with email, they might not have a displayName.

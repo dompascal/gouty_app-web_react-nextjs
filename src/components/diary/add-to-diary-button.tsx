@@ -13,7 +13,7 @@ export default function AddToDiaryButton({ food }: { food: FoodItem }) {
   const { toast } = useToast();
   const [isAdding, setIsAdding] = useState(false);
 
-  const handleAddToDiary = async () => {
+  const handleAddToDiary = () => {
     if (!user) {
       toast({
         variant: 'destructive',
@@ -24,22 +24,15 @@ export default function AddToDiaryButton({ food }: { food: FoodItem }) {
     }
 
     setIsAdding(true);
-    try {
-      await addDiaryEntry(user.uid, food, 100); // Default 100g serving
-      toast({
-        title: 'Food added!',
-        description: `${food.name} has been added to your diary.`,
-      });
-    } catch (error: any) {
-      console.error('Error adding to diary:', error);
-      toast({
-        variant: 'destructive',
-        title: 'Uh oh! Something went wrong.',
-        description: error.message || 'Could not add item to diary.',
-      });
-    } finally {
-      setIsAdding(false);
-    }
+    addDiaryEntry(user.uid, food, 100); // Default 100g serving
+    toast({
+      title: 'Food added!',
+      description: `${food.name} has been added to your diary.`,
+    });
+
+    setTimeout(() => {
+        setIsAdding(false);
+    }, 1500);
   };
 
   if (!user) {

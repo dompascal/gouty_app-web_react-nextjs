@@ -58,9 +58,9 @@ export default function LoginPage() {
         if (user) return; // Don't run if user is already loaded.
 
         getRedirectResult(auth)
-        .then(async (result) => {
+        .then((result) => {
             if (result?.user) {
-            await upsertUserProfile(result.user);
+            upsertUserProfile(result.user);
             toast({
                 title: 'Signed in successfully!',
                 description: `Welcome back, ${result.user.displayName}.`,
@@ -87,12 +87,12 @@ export default function LoginPage() {
     });
   };
 
-  const handleEmailAuth = async (values: z.infer<typeof formSchema>) => {
+  const handleEmailAuth = (values: z.infer<typeof formSchema>) => {
     startTransition(async () => {
       try {
         if (authMode === 'signup') {
           const userCredential = await createUserWithEmailAndPassword(auth, values.email, values.password);
-          await upsertUserProfile(userCredential.user);
+          upsertUserProfile(userCredential.user);
           toast({
             title: 'Account created!',
             description: "You've been signed in successfully.",
