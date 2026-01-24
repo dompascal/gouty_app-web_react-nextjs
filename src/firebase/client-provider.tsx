@@ -9,7 +9,7 @@ export const FirebaseClientProvider = ({
 }: {
   children: React.ReactNode;
 }) => {
-  const firebase = initializeFirebase();
+  const firebase = React.useMemo(() => initializeFirebase(), []);
   return (
     <FirebaseProvider value={firebase}>
       {children}
