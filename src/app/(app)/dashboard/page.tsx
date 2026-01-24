@@ -83,9 +83,11 @@ function HeroSlideshow() {
                 data-ai-hint={image.imageHint}
               />
               <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent" />
+              <div className="absolute top-0 left-0 right-0 bg-black/50 p-2 text-center">
+                <p className="text-white font-semibold uppercase tracking-wider text-xs">Low Purine Spotlight</p>
+              </div>
               <div className="absolute flex h-full w-full flex-col justify-center p-4 text-white sm:p-6 md:w-3/4 lg:w-1/2 lg:p-8">
-                <Badge variant="secondary">Low Purine Spotlight</Badge>
-                <h2 className="mt-2 font-headline text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl">
+                <h2 className="font-headline text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl">
                   {food.name}
                 </h2>
                 <p className="mt-2 max-w-lg text-base text-white/90 md:text-lg">
