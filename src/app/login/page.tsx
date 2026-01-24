@@ -15,48 +15,53 @@ export default function LoginPage() {
   const { user, loading: userLoading } = useUser();
   const auth = useAuth();
   const { toast } = useToast();
-  // State to track if we're processing the redirect result.
-  const [processingRedirect, setProcessingRedirect] = useState(true);
+  // State to track if we're processing the login flow.
+  const [isProcessingLogin, setIsProcessingLogin] = useState(true);
 
   useEffect(() => {
-    // On page load, check for the redirect result from Google.
-    getRedirectResult(auth)
-      .then(async (result) => {
-        if (result && result.user) {
-          // User signed in via redirect.
-          await upsertUserProfile(result.user);
-          toast({
-            title: 'Signed in successfully!',
-            description: `Welcome back, ${result.user.displayName}.`,
-          });
-          // The redirect to dashboard will be handled by the next useEffect
-        } else {
-          // Not a redirect flow, or the result has been handled.
-          setProcessingRedirect(false);
-        }
-      })
-      .catch((error) => {
-        console.error('Error handling redirect result:', error);
-        toast({
-          variant: 'destructive',
-          title: 'Sign-in failed',
-          description: error.message || 'An unexpected error occurred during sign-in.',
-        });
-        setProcessingRedirect(false);
-      });
-  }, [auth, router, toast]);
-
-  useEffect(() => {
-    // If a user is logged in (and we're not processing a redirect), go to the dashboard.
-    // This handles users who are already logged in and visit /login, or after a successful redirect.
-    if (user && !processingRedirect) {
+    // If we have a user object, the session is active. Redirect to dashboard.
+    if (user) {
       router.push('/dashboard');
+      return;
     }
-  }, [user, processingRedirect, router]);
+
+    // Only process redirect result if user loading is complete and no user was found.
+    if (!userLoading && !user) {
+      getRedirectResult(auth)
+        .then(async (result) => {
+          if (result && result.user) {
+            // This was a successful sign-in via redirect.
+            // Persist the user profile.
+            await upsertUserProfile(result.user);
+            toast({
+              title: 'Signed in successfully!',
+              description: `Welcome back, ${result.user.displayName}.`,
+            });
+            // The `user` object from the `useUser` hook will now update,
+            // which will trigger this effect to re-run and handle the redirect.
+          } else {
+            // This was not a redirect, or the redirect was already handled.
+            // It's now safe to show the login page.
+            setIsProcessingLogin(false);
+          }
+        })
+        .catch((error) => {
+          console.error('Error handling redirect result:', error);
+          toast({
+            variant: 'destructive',
+            title: 'Sign-in failed',
+            description: error.message || 'An unexpected error occurred during sign-in.',
+          });
+          setIsProcessingLogin(false);
+        });
+    }
+  }, [user, userLoading, auth, router, toast]);
 
   const handleSignIn = async () => {
     const provider = new GoogleAuthProvider();
     try {
+      // Set state to show loader immediately on click
+      setIsProcessingLogin(true);
       await signInWithRedirect(auth, provider);
     } catch (error) {
       console.error('Error during sign-in:', error);
@@ -65,11 +70,13 @@ export default function LoginPage() {
         title: 'Sign-in failed',
         description: 'Could not initiate Google Sign-in.',
       });
+      // Revert loader state on error
+      setIsProcessingLogin(false);
     }
   };
 
-  // Show a loading state while checking for user or processing redirect.
-  if (userLoading || processingRedirect) {
+  // Show a loading state while checking user status or processing the redirect.
+  if (userLoading || isProcessingLogin) {
     return (
       <div className="flex min-h-screen flex-col items-center justify-center">
         <Utensils className="h-12 w-12 animate-pulse text-primary" />
@@ -77,8 +84,8 @@ export default function LoginPage() {
     );
   }
 
-  // If a user object exists, it means we're about to redirect. Show a loader
-  // to prevent the login button from flashing.
+  // This is a safeguard against the login button flashing briefly if the
+  // user object is populated but the effect hasn't redirected yet.
   if (user) {
      return (
       <div className="flex min-h-screen flex-col items-center justify-center">
