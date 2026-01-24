@@ -5,8 +5,8 @@ import {
   doc,
   setDoc,
   Timestamp,
+  type Firestore,
 } from 'firebase/firestore';
-import { firestore } from '.';
 import type { FoodItem } from '@/lib/types';
 import type { User } from 'firebase/auth';
 import { errorEmitter } from './error-emitter';
@@ -24,6 +24,7 @@ export type DiaryEntry = {
 
 
 export function addDiaryEntry(
+  firestore: Firestore,
   userId: string,
   food: FoodItem,
   servingSize: number
@@ -53,7 +54,7 @@ function createDisplayNameFromEmail(email: string): string {
   return email.split('@')[0].replace(/[^a-zA-Z0-9]/g, ' ').replace(/\s+/g, ' ').trim();
 }
 
-export function upsertUserProfile(user: User) {
+export function upsertUserProfile(firestore: Firestore, user: User) {
   const userRef = doc(firestore, 'users', user.uid);
   
   // If the user signed up with email, they might not have a displayName.

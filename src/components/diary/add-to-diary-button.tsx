@@ -7,11 +7,13 @@ import type { FoodItem } from '@/lib/types';
 import { Button } from '@/components/ui/button';
 import { BookHeart } from 'lucide-react';
 import { useState } from 'react';
+import { useFirestore } from '@/firebase';
 
 export default function AddToDiaryButton({ food }: { food: FoodItem }) {
   const { user } = useUser();
   const { toast } = useToast();
   const [isAdding, setIsAdding] = useState(false);
+  const firestore = useFirestore();
 
   const handleAddToDiary = () => {
     if (!user) {
@@ -24,7 +26,7 @@ export default function AddToDiaryButton({ food }: { food: FoodItem }) {
     }
 
     setIsAdding(true);
-    addDiaryEntry(user.uid, food, 100); // Default 100g serving
+    addDiaryEntry(firestore, user.uid, food, 100); // Default 100g serving
     toast({
       title: 'Food added!',
       description: `${food.name} has been added to your diary.`,

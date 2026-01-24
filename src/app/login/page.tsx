@@ -10,7 +10,7 @@ import {
   signInWithEmailAndPassword,
 } from 'firebase/auth';
 import { useUser } from '@/firebase/auth/use-user';
-import { useAuth } from '@/firebase';
+import { useAuth, useFirestore } from '@/firebase';
 import { Button } from '@/components/ui/button';
 import { Utensils } from 'lucide-react';
 import { upsertUserProfile } from '@/firebase/firestore';
@@ -33,6 +33,7 @@ export default function LoginPage() {
   const router = useRouter();
   const { user, loading: userLoading } = useUser();
   const auth = useAuth();
+  const firestore = useFirestore();
   const { toast } = useToast();
   const [isPending, startTransition] = useTransition();
   const [authMode, setAuthMode] = useState<AuthMode>('signin');
@@ -60,7 +61,7 @@ export default function LoginPage() {
         getRedirectResult(auth)
         .then((result) => {
             if (result?.user) {
-            upsertUserProfile(result.user);
+            upsertUserProfile(firestore, result.user);
             toast({
                 title: 'Signed in successfully!',
                 description: `Welcome back, ${result.user.displayName}.`,
@@ -77,7 +78,7 @@ export default function LoginPage() {
             });
         });
     });
-  }, [auth, toast, user]);
+  }, [auth, toast, user, firestore]);
 
 
   const handleGoogleSignIn = async () => {
@@ -92,7 +93,7 @@ export default function LoginPage() {
       try {
         if (authMode === 'signup') {
           const userCredential = await createUserWithEmailAndPassword(auth, values.email, values.password);
-          upsertUserProfile(userCredential.user);
+          upsertUserProfile(firestore, userCredential.user);
           toast({
             title: 'Account created!',
             description: "You've been signed in successfully.",
