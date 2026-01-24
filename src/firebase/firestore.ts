@@ -52,11 +52,21 @@ export async function addDiaryEntry(
   });
 }
 
+// Helper to create a display name from an email address
+function createDisplayNameFromEmail(email: string): string {
+  return email.split('@')[0].replace(/[^a-zA-Z0-9]/g, ' ').replace(/\s+/g, ' ').trim();
+}
+
 export async function upsertUserProfile(user: User) {
   const userRef = doc(firestore, 'users', user.uid);
+  
+  // If the user signed up with email, they might not have a displayName.
+  // We'll create a default one from their email.
+  const displayName = user.displayName || (user.email ? createDisplayNameFromEmail(user.email) : 'Gouty User');
+
   const profileData = {
     uid: user.uid,
-    displayName: user.displayName,
+    displayName: displayName,
     email: user.email,
     photoURL: user.photoURL,
   };
