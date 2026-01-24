@@ -12,6 +12,8 @@ import type { LucideIcon } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { cn } from '@/lib/utils';
 import AddToDiaryButton from '@/components/diary/add-to-diary-button';
+import StructuredData from '@/components/structured-data';
+import type { Article } from 'schema-dts';
 
 function getFoodBySlug(slug: string): FoodItem | undefined {
   const name = decodeURIComponent(slug);
@@ -72,10 +74,37 @@ export default function FoodDetailPage({ params }: { params: { slug: string } })
   
   const imageId = categoryImageMap[food.category] || 'other';
   const foodImage = PlaceHolderImages.find(p => p.id === imageId);
+  
+  const articleSchema: Article = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `https://gouty.app/food/${params.slug}`,
+    },
+    headline: `${food.name} - Purine Content and Gout Information`,
+    description: `Learn about the purine content of ${food.name} (${food.purines} mg per 100g), its purine level (${food.purineLevel}), and whether it's suitable for a gout-friendly diet.`,
+    image: foodImage?.imageUrl || '',
+    author: {
+      '@type': 'Organization',
+      name: 'Gouty',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Gouty',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://gouty.app/logo.png', // placeholder
+      },
+    },
+    datePublished: '2024-07-25T12:00:00Z',
+    dateModified: '2024-07-25T12:00:00Z',
+  };
 
 
   return (
     <div className="space-y-8">
+      <StructuredData data={articleSchema} />
       <div className="flex justify-between items-center">
         <Button asChild variant="outline" size="sm">
           <Link href="/dashboard">

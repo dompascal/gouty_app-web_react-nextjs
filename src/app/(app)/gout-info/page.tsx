@@ -7,12 +7,41 @@ import {
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import StructuredData from '@/components/structured-data';
+import type { Article } from 'schema-dts';
 
 const goutInfoImage = PlaceHolderImages.find(p => p.id === 'gout-info');
 
 export default function GoutInfoPage() {
+  const articleSchema: Article = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': 'https://gouty.app/gout-info',
+    },
+    headline: 'Understanding Gout - Causes, Symptoms, and Diet',
+    description: 'A comprehensive guide to the causes and symptoms of gout, and how dietary management, particularly purine intake, can help.',
+    image: goutInfoImage?.imageUrl || '',
+    author: {
+      '@type': 'Organization',
+      name: 'Gouty',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Gouty',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://gouty.app/logo.png',
+      },
+    },
+    datePublished: '2024-07-25T12:00:00Z',
+    dateModified: '2024-07-25T12:00:00Z',
+  };
+
   return (
     <div className="space-y-8">
+      <StructuredData data={articleSchema} />
       <header className="relative mb-8 overflow-hidden rounded-lg">
         {goutInfoImage && (
           <Image

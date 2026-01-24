@@ -2,6 +2,9 @@
 
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { useEffect, useState } from 'react';
+import StructuredData from '@/components/structured-data';
+import type { WebPage } from 'schema-dts';
+
 
 export default function TermsAndConditionsPage() {
   const [lastUpdated, setLastUpdated] = useState('');
@@ -10,8 +13,17 @@ export default function TermsAndConditionsPage() {
     setLastUpdated(new Date().toLocaleDateString());
   }, []);
 
+  const pageSchema: WebPage = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: 'Terms and Conditions - Gouty',
+    description: 'Review the terms and conditions for using the Gouty application.',
+    url: 'https://gouty.app/terms',
+  };
+
   return (
     <div className="space-y-8">
+      <StructuredData data={pageSchema} />
       <header className="space-y-2">
         <h1 className="font-headline text-3xl font-bold tracking-tight md:text-4xl">
           Terms and Conditions

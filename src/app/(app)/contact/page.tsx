@@ -1,8 +1,18 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import StructuredData from '@/components/structured-data';
+import type { ContactPage } from 'schema-dts';
 
 export default function ContactPage() {
+  const pageSchema: ContactPage = {
+    '@context': 'https://schema.org',
+    '@type': 'ContactPage',
+    name: 'Contact Us - Gouty',
+    description: 'Get in touch with the Gouty team for questions, feedback, or support.',
+    url: 'https://gouty.app/contact',
+  };
   return (
     <div className="space-y-8">
+       <StructuredData data={pageSchema} />
       <header className="space-y-2">
         <h1 className="font-headline text-3xl font-bold tracking-tight md:text-4xl">
           Contact Us
