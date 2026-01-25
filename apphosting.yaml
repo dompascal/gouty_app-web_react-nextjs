@@ -5,5 +5,12 @@ runConfig:
   # Increase this value if you'd like to automatically spin up
   # more instances in response to increased traffic.
   maxInstances: 1
+  environmentVariables:
+    NEXT_PUBLIC_FIREBASE_API_KEY: "AIzaSyBN3ig5GCCQUAmhk4dDoaDR8FX7c3F03qw"
+    NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN: "gouty-11446917-bb41d.firebaseapp.com"
+    NEXT_PUBLIC_FIREBASE_PROJECT_ID: "gouty-11446917-bb41d"
+    NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET: "gouty-11446917-bb41d.firebasestorage.app"
+    NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID: "1034337944043"
+    NEXT_PUBLIC_FIREBASE_APP_ID: "1:1034337944043:web:6a1815855359d6f12d59ae"
 labels:
   firestore-database: gouty-web-dev
