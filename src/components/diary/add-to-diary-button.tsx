@@ -15,7 +15,7 @@ export default function AddToDiaryButton({ food }: { food: FoodItem }) {
   const [isAdding, setIsAdding] = useState(false);
   const firestore = useFirestore();
 
-  const handleAddToDiary = () => {
+  const handleAddToDiary = async () => {
     if (!user) {
       toast({
         variant: 'destructive',
@@ -26,15 +26,22 @@ export default function AddToDiaryButton({ food }: { food: FoodItem }) {
     }
 
     setIsAdding(true);
-    addDiaryEntry(firestore, user.uid, food, 100); // Default 100g serving
-    toast({
-      title: 'Food added!',
-      description: `${food.name} has been added to your diary.`,
-    });
-
-    setTimeout(() => {
-        setIsAdding(false);
-    }, 1500);
+    try {
+      await addDiaryEntry(firestore, user.uid, food, 100); // Default 100g serving
+      toast({
+        title: 'Food added!',
+        description: `${food.name} has been added to your diary.`,
+      });
+    } catch (error) {
+      console.error("Failed to add diary entry:", error);
+      toast({
+        variant: 'destructive',
+        title: 'Error adding food',
+        description: 'There was a problem adding this item. Please try again.',
+      });
+    } finally {
+      setIsAdding(false);
+    }
   };
 
   if (!user) {
@@ -43,7 +50,7 @@ export default function AddToDiaryButton({ food }: { food: FoodItem }) {
 
   return (
     <Button onClick={handleAddToDiary} disabled={isAdding}>
-      <BookHeart className="mr-2 h-4 w-4" /> 
+      <BookHeart className="mr-2 h-4 w-4" />
       {isAdding ? 'Adding...' : 'Add to Diary'}
     </Button>
   );
