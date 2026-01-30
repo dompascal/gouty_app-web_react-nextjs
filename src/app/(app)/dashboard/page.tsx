@@ -119,16 +119,15 @@ function HeroSlideshow() {
 }
 
 
-export default function DashboardPage({
+
+export default async function DashboardPage({
   searchParams,
 }: {
-  searchParams: {
-    query?: string;
-    level?: string;
-  };
+  searchParams: any;
 }) {
-  const query = searchParams.query || '';
-  const level = searchParams.level || 'all';
+  const params = await searchParams;
+  const query = params?.query || '';
+  const level = params?.level || 'all';
 
   return (
     <div className="-mt-4 -mx-4 sm:-mt-6 sm:-mx-6 lg:-mt-8 lg:-mx-8">

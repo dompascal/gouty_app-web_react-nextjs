@@ -7,7 +7,9 @@
     "build": "NODE_ENV=production next build",
     "start": "next start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "update-data": "node scripts/update-data.js",
+    "clear-data": "node scripts/clear-data.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^4.1.3",

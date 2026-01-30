@@ -1,0 +1,47 @@
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
+import { Badge } from '@/components/ui/badge';
+import { cn } from '@/lib/utils';
+import { format } from 'date-fns';
+import type { DiaryEntry } from '@/firebase/firestore';
+
+const levelColors: { [key: string]: string } = {
+  Low: 'bg-green-100 text-green-800 border-green-200 dark:bg-green-900/20 dark:text-green-300 dark:border-green-700/40',
+  Medium: 'bg-yellow-100 text-yellow-800 border-yellow-200 dark:bg-yellow-900/20 dark:text-yellow-300 dark:border-yellow-700/40',
+  High: 'bg-orange-100 text-orange-800 border-orange-200 dark:bg-orange-900/20 dark:text-orange-300 dark:border-orange-700/40',
+  'Very High': 'bg-red-100 text-red-800 border-red-200 dark:bg-red-900/20 dark:text-red-300 dark:border-red-700/40',
+};
+
+export function DiaryTable({ entries }: { entries: DiaryEntry[] }) {
+  return (
+    <div className="overflow-x-auto">
+      <Table>
+        <TableHeader>
+          <TableRow>
+            <TableHead>Date</TableHead>
+            <TableHead>Food</TableHead>
+            <TableHead>Category</TableHead>
+            <TableHead>Purine Level</TableHead>
+            <TableHead className="text-right">Purines (mg/100g)</TableHead>
+          </TableRow>
+        </TableHeader>
+        <TableBody>
+          {entries.map((entry) => (
+            <TableRow key={entry.id}>
+              <TableCell className="whitespace-nowrap">
+                {entry.createdAt ? format(entry.createdAt, 'PPp') : 'N/A'}
+              </TableCell>
+              <TableCell className="font-medium">{entry.foodName}</TableCell>
+              <TableCell>{entry.category}</TableCell>
+              <TableCell>
+                <Badge variant="outline" className={cn(entry.purineLevel ? levelColors[entry.purineLevel] : '')}>
+                  {entry.purineLevel}
+                </Badge>
+              </TableCell>
+              <TableCell className="text-right">{entry.purines ?? 'N/A'}</TableCell>
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
+    </div>
+  );
+}

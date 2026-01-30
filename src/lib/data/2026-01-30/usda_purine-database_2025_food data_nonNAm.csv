@@ -1,0 +1,365 @@
+"USDA and ODS-NIH Database for the Purine Content of Foods
+Release 2, March 2025",,,,,,,,,,,,,,,,,,,,,,
+Presented in milligrams per 100 grams (mg/100g),,,,,,,,,,,,,,,,,,,,,,
+International Published Literature (Excluding North America),,,,,,,,,,,,,,,,,,,,,,
+Food Description,N,Adenine,,,,Guanine,,,,Hypoxanthine,,,,Xanthine,,,,Total of 4 Purine Bases (mg/100g),Uric Acid (mg/100g)*,Year(s) Published,Data Source1,Country of Origin2 
+,,Mean (mg/100g)*,SEM,Min,Max,Mean (mg/100g)*,SEM,Min,Max,Mean (mg/100g)*,SEM,Min,Max,Mean (mg/100g)*,SEM,Min,Max,,,,,
+Beef Organ Products,,,,,,,,,,,,,,,,,,,,,,
+"Beef heart, raw",1,46,-,-,-,27,-,-,-,97,-,-,-,15,-,-,-,185,-,2014,b,Japan 
+"Beef kidney, raw",1,68,-,-,-,64,-,-,-,8.2,-,-,-,35,-,-,-,174,-,2014,b,Japan 
+"Beef large intestine, raw",1,27,-,-,-,39,-,-,-,15,-,-,-,7.3,-,-,-,88,-,2014,b,Japan
+"Beef liver, raw",1,87,-,-,-,83,-,-,-,ND,-,-,-,50,-,-,-,220,-,2014,b,Japan 
+"Beef stomach, raw",1,28,-,-,-,21,-,-,-,18,-,-,-,17,-,-,-,84,-,2014,b,Japan
+"Beef tongue, raw",1,24,-,-,-,12,-,-,-,45,-,-,-,9.1,-,-,-,90,-,2014,b,Japan
+Beef (other than organs),,,,,,,,,,,,,,,,,,,,,,
+"Beef brisket, raw",1,14,-,-,-,7.6,-,-,-,49,-,-,-,9.1,-,-,-,79,-,2014,b,Japan
+"Beef chuck ribs, raw",1,15,-,-,-,9.1,-,-,-,37,-,-,-,17,-,-,-,77,-,2014,b,Japan
+"Beef clod (shoulder), raw",1,19,-,-,-,9.1,-,-,-,65,-,-,-,11,-,-,-,104,-,2014,b,Japan
+"Beef front, raw (unspecified)",1,17,-,-,-,12,-,-,-,45,-,-,-,3.4,-,-,-,77,1.2,2010,f,Czech Republic 
+"Beef neck, raw",1,19,-,-,-,14,-,-,-,54,-,-,-,14,-,-,-,101,-,2014,b,Japan
+"Beef rib loin, raw",1,14,-,-,-,7.6,-,-,-,40,-,-,-,14,-,-,-,74,-,2014,b,Japan
+"Beef round (topside), cooked",1,27,-,-,-,16,-,-,-,87,-,-,-,13,-,-,-,143,-,2014,b,Japan
+"Beef round (topside), raw",2,20,-,19,20,13,-,11,15,75,-,72,77,16,-,9.1,23,123,-,2014,b,Japan
+"Beef shin, raw",1,18,-,-,-,14,-,-,-,59,-,-,-,17,-,-,-,106,-,2014,b,Japan
+"Beef sirloin, raw",1,16,-,-,-,9.1,-,-,-,56,-,-,-,9.1,-,-,-,90,-,2014,b,Japan
+"Beef, tenderloin, raw",1,16,-,-,-,9.1,-,-,-,64,-,-,-,9.1,-,-,-,98,-,2014,b,Japan
+Beverages,,,,,,,,,,,,,,,,,,,,,,
+Amazake (fermented drink made from sake lees),1,3.1,-,-,-,2.1,-,-,-,1.1,-,-,-,0,-,-,-,6.2,-,2020,n,Japan
+Fruit juice,1,0.5,-,-,-,0.4,-,-,-,0.1,-,-,-,0,-,-,-,1.1,-,2020,n,Japan
+Green tea beverage,1,1.0,-,-,-,0.7,-,-,-,0,-,-,-,0,-,-,-,1.7,-,2020,n,Japan
+"Green tea leaves, dried",1,83,-,-,-,117,-,-,-,3.6,-,-,-,1.0,-,-,-,204,-,2020,n,Japan
+Vegetable juice,1,8.8,-,-,-,4.4,-,-,-,0.5,-,-,-,0,-,-,-,14,-,2020,n,Japan
+Cereal grains and grain-based products,,,,,,,,,,,,,,,,,,,,,,
+"Barley, raw",1,22,-,-,-,23,-,-,-,0,-,-,-,0,-,-,-,44,-,2014,b,Japan
+Bread (no further specified),1,1.1,-,-,-,2.4,-,-,-,0.3,-,-,-,0.6,-,-,-,4.4,-,2020,n,Japan
+Bread flour,1,12,-,-,-,14,-,-,-,0,-,-,-,0,-,-,-,26,-,2014,b,Japan
+Buckwheat flour,1,35,-,-,-,41,-,-,-,0,-,-,-,0,-,-,-,76,-,2014,b,Japan
+Cake flour,1,8.1,-,-,-,7.6,-,-,-,0,-,-,-,0,-,-,-,16,-,2014,b,Japan
+Gelatin noodle (dried),1,0.2,-,-,-,0.2,-,-,-,0.2,-,-,-,0,-,-,-,0.6,-,2020,n,Japan
+Pastry flour,1,12,-,-,-,14,-,-,-,0,-,-,-,0,-,-,-,26,-,2014,b,Japan
+"Ramen, noodle",1,7.5,-,-,-,6.8,-,-,-,0,-,-,-,7.3,-,-,-,22,-,2014,b,Japan
+Rice bran,1,36,-,-,-,57,-,-,-,6,-,-,-,0.9,-,-,-,100,-,2014,b,Japan
+Rice crackers,1,0,-,-,-,4.3,-,-,-,4.2,-,-,-,5.7,-,-,-,14,-,2014,b,Japan
+"Rice, white, raw3",3,14,1.6,11,16,19,1.8,15,21,0,-,-,-,0,-,-,-,33,-,2014,b,Japan
+Soba (buckwheat noodles),1,2.0,-,-,-,5.6,-,-,-,0,-,-,-,0,-,-,-,7.6,-,2020,n,Japan
+Spaghetti,1,1.5,-,-,-,4.1,-,-,-,1.0,-,-,-,0.2,-,-,-,6.8,-,2020,n,Japan
+Udon (wheat noodles),1,5.4,-,-,-,6.2,-,-,-,0.5,-,-,-,0,-,-,-,12,-,2020,n,Japan
+Dairy and Eggs,,,,,,,,,,,,,,,,,,,,,,
+Butter,1,ND,-,-,-,ND,-,-,-,ND,-,-,-,ND,-,-,-,ND,-,2020,n,Japan
+"Cheese, grated",1,8.2,-,-,-,4.2,-,-,-,ND,-,-,-,0.6,-,-,-,13,-,2014,b,Japan
+"Cream, animal, fresh",1,0.2,-,-,-,0,-,-,-,ND,-,-,-,ND,-,-,-,0.2,-,2020,n,Japan
+"Cream, vegetable, fresh",1,0.1,-,-,-,ND,-,-,-,ND,-,-,-,ND,-,-,-,0.1,-,2020,n,Japan
+"Egg, chicken, raw",1,0,-,-,-,ND,-,-,-,0,-,-,-,0,-,-,-,0,-,2014,b,Japan
+"Egg, quail, raw",1,0,-,-,-,ND,-,-,-,0,-,-,-,ND,-,-,-,0,-,2014,b,Japan
+Margarine,1,ND,-,-,-,ND,-,-,-,ND,-,-,-,ND,-,-,-,ND,-,2020,n,Japan
+Milk,1,0,-,-,-,0,-,-,-,0,-,-,-,0,-,-,-,0,-,2014,b,Japan
+Yogurt (not further specified),1,1.4,-,-,-,2.1,-,-,-,1.5,-,-,-,0.2,-,-,-,5.2,-,2014,b,Japan
+"Yogurt, liquid",1,0.6,-,-,-,0.8,-,-,-,ND,-,-,-,ND,-,-,-,1.4,-,2020,n,Japan
+Finfish and shellfish,,,,,,,,,,,,,,,,,,,,,,
+"Anchovy, dried",1,258,-,-,-,465,-,-,-,382,-,-,-,4.0,-,-,-,1109,-,2014,b,Japan
+"Anchovy, fresh",1,25,-,-,-,156,-,-,-,122,-,-,-,1.2,-,-,-,304,-,2020,n,Japan
+"Arabesque greenling, raw",1,19,-,-,-,34,-,-,-,95,-,-,-,2.4,-,-,-,150,-,2014,b,Japan
+"Ayu, raw",1,18,-,-,-,26,-,-,-,90,-,-,-,0,-,-,-,133,-,2014,b,Japan
+"Barracuda, raw",1,14,-,-,-,24,-,-,-,110,-,-,-,ND,-,-,-,148,-,2014,b,Japan
+"Beltfish, raw",3,15,1.0,-,-,35,3.0,-,-,84,4.3,-,-,5.6,1.0,-,-,139,-,2017,c,China
+"Bonito, dried",1,51,-,-,-,79,-,-,-,363,-,-,-,0,-,-,-,493,-,2014,b,Japan
+"Carp, raw",1,16,-,-,-,12,-,-,-,75,-,-,-,ND,-,-,-,103,-,2014,b,Japan
+"Clams, raw",1,64,-,-,-,39,-,-,-,12,-,-,-,30,-,-,-,145,-,2014,b,Japan
+"Clams, raw",3,29,1.4,-,-,34,1.3,-,-,47,2.1,-,-,ND,-,-,-,110,-,2017,c,China
+"Cod, fresh",1,13,-,-,-,21,-,-,-,62,-,-,-,1.5,-,-,-,98,-,2020,n,Japan
+"Conger eel, fresh",1,12,-,-,-,22,-,-,-,57,-,-,-,4.9,-,-,-,95,-,2020,n,Japan
+"Crab ovary, raw",1,43,-,-,-,106,-,-,-,3.9,-,-,-,0,-,-,-,152,-,2014,b,Japan
+"Crab, red king, raw",1,57,-,-,-,20,-,-,-,9.5,-,-,-,14,-,-,-,100,-,2014,b,Japan
+"Crab, snow, raw",1,76,-,-,-,14,-,-,-,0,-,-,-,47,-,-,-,137,-,2014,b,Japan
+"Cutlassfish (hairtail), fresh",1,12,-,-,-,276,-,-,-,95,-,-,-,2.8,-,-,-,386,-,2020,n,Japan
+"Eel, Japanese, raw",1,14,-,-,-,24,-,-,-,54,-,-,-,ND,-,-,-,92,-,2014,b,Japan
+Engawa (flesh of fish fins),1,3.7,-,-,-,9.0,-,-,-,6.3,-,-,-,0,-,-,-,19,-,2020,n,Japan
+"Fat greenling, raw",1,20,-,-,-,14,-,-,-,95,-,-,-,ND,-,-,-,129,-,2014,b,Japan
+"Fish ball, processed",1,12,-,-,-,24,-,-,-,31,-,-,-,0,-,-,-,68,-,2014,b,Japan
+"Fish product (hanpen), processed",1,1.6,-,-,-,3.3,-,-,-,7.4,-,-,-,0.2,-,-,-,13,-,2014,b,Japan
+"Fish product (kamaboko), processed",1,9.5,-,-,-,6.0,-,-,-,11,-,-,-,0,-,-,-,26,-,2014,b,Japan
+"Fish product (narutomaki), processed",1,8.1,-,-,-,12,-,-,-,12,-,-,-,0,-,-,-,32,-,2014,b,Japan
+"Fish product (sasakamaboko), processed",1,15,-,-,-,17,-,-,-,16,-,-,-,0,-,-,-,48,-,2014,b,Japan
+"Fish product (Satsuma age), processed",1,6.8,-,-,-,11,-,-,-,4.1,-,-,-,0,-,-,-,22,-,2014,b,Japan
+"Fish sausage, processed",1,6.8,-,-,-,9.1,-,-,-,6.8,-,-,-,0,-,-,-,23,-,2014,b,Japan
+"Fishcake tube, processed",1,15,-,-,-,15,-,-,-,18,-,-,-,0,-,-,-,48,-,2014,b,Japan
+"Flounder, yellow striped, raw",1,15,-,-,-,29,-,-,-,69,-,-,-,0,-,-,-,113,-,2014,b,Japan
+"Flying fish, raw",1,14,-,-,-,23,-,-,-,118,-,-,-,0,-,-,-,154,-,2014,b,Japan
+"Gnomefish, meat, raw",1,15,-,-,-,15,-,-,-,120,-,-,-,0.8,-,-,-,151,-,2014,b,Japan
+"Gnomefish, skin, raw",1,9.6,-,-,-,297,-,-,-,74,-,-,-,2.5,-,-,-,383,-,2014,b,Japan
+"Halibut, bastard, raw",1,18,-,-,-,15,-,-,-,101,-,-,-,0,-,-,-,134,-,2014,b,Japan
+"Herring, raw",1,14,-,-,-,23,-,-,-,103,-,-,-,ND,-,-,-,139,-,2014,b,Japan
+"Lobster, spiny, raw",1,31,-,-,-,9.8,-,-,-,61,-,-,-,0.1,-,-,-,102,-,2014,b,Japan
+"Mackerel, fermented (Heshiko)",1,1.2,-,-,-,109,-,-,-,96,-,-,-,0.4,-,-,-,207,-,2020,n,Japan
+"Mackerel, jack, half-dried",1,15,-,-,-,119,-,-,-,112,-,-,-,ND,-,-,-,246,-,2014,b,Japan
+"Mackerel, Japanese, skin, raw",3,23,0.8,-,-,1003,3.4,-,-,149,0.6,-,-,ND,-,-,-,1175,-,2017,c,China
+"Mackerel, raw (unspecified)",2,22,-,-,-,35,-,-,-,148,-,-,-,0,-,-,-,205,-,2014,b,Japan
+"Mackerel, Spanish, raw",4,14,0.7,12,15,15,2.9,6,18,129,2.5,121,131,3.9,1.3,ND,5.1,162,-,"2014, 2017","b,c","Japan, China"
+"Milt, cod",1,360,-,-,-,150,-,-,-,48,-,-,-,3,-,-,-,560,-,2020,n,Japan
+"Milt, globefish",1,219,-,-,-,100,-,-,-,54,-,-,-,2.8,-,-,-,375,-,2020,n,Japan
+"Milt, pigfish, striped, raw",1,67,-,-,-,212,-,-,-,19,-,-,-,7.7,-,-,-,306,-,2014,b,Japan
+"Monkfish liver, raw",1,38,-,-,-,56,-,-,-,6.0,-,-,-,4.4,-,-,-,104,-,2014,b,Japan
+"Monkfish liver, steamed",1,158,-,-,-,211,-,-,-,27,-,-,-,3.1,-,-,-,399,-,2014,b,Japan
+"Monkfish, raw",1,18,-,-,-,20,-,-,-,33,-,-,-,0.5,-,-,-,70,-,2014,b,Japan
+"Octopus organs, raw",1,29,-,-,-,42,-,-,-,4.8,-,-,-,4,-,-,-,80,-,2014,b,Japan
+"Octopus, raw",1,22,-,-,-,18,-,-,-,37,-,-,-,61,-,-,-,137,-,2014,b,Japan
+"Okiami (krill), raw",1,108,-,-,-,74,-,-,-,18,-,-,-,26,-,-,-,226,-,2014,b,Japan
+"Oysters, raw",4,43,4.0,39,55,38,1.0,34.8,38.7,20,2.7,12,23,21,25,ND,82,122,-,"2014, 2017","b,c","Japan, China"
+"Pacific saury, half-dried",1,12,-,-,-,103,-,-,-,94,-,-,-,ND,-,-,-,209,-,2014,b,Japan
+"Pacific saury, raw",1,15,-,-,-,53,-,-,-,87,-,-,-,0,-,-,-,155,-,2014,b,Japan
+"Pigfish, striped, raw",1,14,-,-,-,11,-,-,-,125,-,-,-,ND,-,-,-,149,-,2014,b,Japan
+"Red seabream, raw",1,14,-,-,-,11,-,-,-,105,-,-,-,0,-,-,-,129,-,2014,b,Japan
+"Rockfish (Mebaru), raw",1,14,-,-,-,18,-,-,-,93,-,-,-,0,-,-,-,124,-,2014,b,Japan
+"Roe, flying fish, in soy sauce",1,21,-,-,-,48,-,-,-,20,-,-,-,2.2,-,-,-,92,-,2014,b,Japan
+"Roe, mixed species, raw",8,21,9.0,0,75,36,11,0,81,22,6.3,0,41,1.7,1.0,ND,8.6,81,-,2014,b,Japan
+"Sablefish meat, raw",1,27,-,-,-,12,-,-,-,84,-,-,-,0.2,-,-,-,123,-,2014,b,Japan
+"Sablefish skin, raw",1,12,-,-,-,14,-,-,-,39,-,-,-,1.6,-,-,-,67,-,2014,b,Japan
+"Sailfin sandfish, raw",1,16,-,-,-,30,-,-,-,49,-,-,-,3,-,-,-,98,-,2014,b,Japan
+"Salmon, canned",1,24,-,-,-,38,-,-,-,71,-,-,-,0,-,-,-,133,-,2014,b,Japan
+"Salmon, chum, raw",3,16,0.4,-,-,12,0.03,-,-,97,1.7,-,-,ND,-,-,-,125,-,2017,c,China
+"Salmon, mixed species, raw",1,18,-,-,-,11,-,-,-,91,-,-,-,0,-,-,-,119,-,2014,b,Japan
+"Sardine, baby, dried",1,134,-,-,-,355,-,-,-,257,-,-,-,0,-,-,-,746,-,2014,b,Japan
+"Sardine, fermented (Heshiko)",1,1.0,-,-,-,68,-,-,-,46,-,-,-,1.6,-,-,-,116,-,2020,n,Japan
+"Sardine, half-dried",1,20,-,-,-,157,-,-,-,125,-,-,-,3.0,-,-,-,305,-,2014,b,Japan
+"Sardine, raw",1,18,-,-,-,106,-,-,-,87,-,-,-,ND,-,ND,-,211,-,2014,b,Japan
+"Scallops, raw",1,64,-,-,-,6.6,-,-,-,5.3,-,-,-,1.0,-,-,-,77,-,2014,b,Japan
+"Sea cucumber, raw",4,2.5,0.23,2.3,3.2,5.2,1.02,2.1,6.2,0.05,0.05,ND,0.2,0,0,ND,0,8,,"2014, 2017","b,c","Japan, China"
+"Sea urchin, raw",1,40,-,-,-,66,-,-,-,23,-,-,-,9.1,-,-,-,137,-,2014,b,Japan
+"Seabass, Japanese, liver, raw",3,80,3.9,-,-,112,5.3,-,-,18,0.7,-,-,8.4,0.4,-,-,218,-,2017,c,China
+"Seabass, Japanese, skin, raw",3,31,6.1,-,-,1219,3.2,-,-,146,2.1,-,-,3.9,0.6,-,-,1400,-,2017,c,China
+"Seabass, mixed species, raw",10,13,0.1,12.4,13.5,10,0.5,8.2,12.1,84,1.8,80,94,0,0,ND,0,107,-,"2014, 2017","b,c","Japan, China"
+"Shad, dotted gizzard",1,7.7,-,-,-,90,-,-,-,89,-,-,-,0.4,-,-,-,187,-,2020,n,Japan
+"Shishamo with roe, half-dried",1,12,-,-,-,60,-,-,-,75,-,-,-,2.6,-,-,-,150,-,2014,b,Japan
+"Shrimp, deep-water",1,15,-,-,-,11,-,-,-,194,-,-,-,1.7,-,-,-,222,-,2020,n,Japan
+"Shrimp, raw (sand shrimp and Pacific shrimp species)",6,54,-,-,-,31,-,-,-,86,-,-,-,6.1,-,-,-,177,-,2017,c,China
+"Shrimp, raw (unspecified)",4,38,9.1,8.3,58,15,0.9,12,17,76,14,29,103,38,24,0,117.1,167,-,2014,b,Japan
+"Shrimp, Sakura, dried",1,84,-,-,-,124,-,-,-,512,-,-,-,29,-,-,-,749,-,2014,b,Japan
+"Smelt, raw",1,14,-,-,-,24,-,-,-,57,-,-,-,0,-,-,-,95,-,2014,b,Japan
+"Snails, raw",6,49,11,24,73,92,8.9,72,111,33,2.8,27,40,8.5,0.9,6.4,11,182,-,2017,c,China
+"Squid organs, raw",1,0,-,-,-,17,-,-,-,22,-,-,-,20,-,-,-,60,-,2014,b,Japan
+"Squid, raw (unspecified)",3,52,3.2,47,58,31,13,15,58,36,12,16,80,32,15,3.4,53,151,-,2014,b,Japan
+"Squid, shredded, dried",1,25,-,-,-,21,-,-,-,48,-,-,-,1.0,-,-,-,94,-,2014,b,Japan
+"Swordfish (Xiphias), fresh",1,11,-,-,-,10,-,-,-,111,-,-,-,0.8,-,-,-,132,-,2020,n,Japan
+"Tilefish, raw",1,9.5,-,-,-,11,-,-,-,99,-,-,-,0,-,-,-,120,-,2014,b,Japan
+"Trout, rainbow, raw",1,26,-,-,-,56,-,-,-,99,-,-,-,ND,-,-,-,181,-,2014,b,Japan
+"Tuna (Bonito), raw",1,22,-,-,-,20,-,-,-,170,-,-,-,0,-,-,-,211,-,2014,b,Japan
+"Tuna, canned",1,15,-,-,-,14,-,-,-,89,-,-,-,0,-,-,-,117,-,2014,b,Japan
+"Tuna, raw (unspecified)",1,18,-,-,-,11,-,-,-,129,-,-,-,0,-,-,-,157,-,2014,b,Japan
+"Turbot liver, raw",3,146,1.1,-,-,22,0.2,-,-,88,1.7,-,-,7.9,0.6,-,-,264,-,2017,c,China
+"Turbot skin, raw",3,22,0.7,-,-,11,0.2,-,-,100,1.3,-,-,9.2,0.2,-,-,142,-,2017,c,China
+"Turbot, European, raw",3,15,0.7,-,-,15,0.2,-,-,75,1.3,-,-,7.1,0.7,-,-,112,-,2017,c,China
+"Weather loach, raw",1,28,-,-,-,50,-,-,-,52,-,-,-,6.1,-,-,-,136,-,2014,b,Japan
+"Whitebait, dried",1,159,-,-,-,235,-,-,-,70,-,-,-,7.5,-,-,-,471,-,2014,b,Japan
+"Whiting (Sillaginidae), raw",1,14,-,-,-,11,-,-,-,120,-,-,-,ND,-,-,-,144,-,2014,b,Japan
+"Yellowtail (amberjack), raw",1,19,-,-,-,12,-,-,-,90,-,-,-,0,-,-,-,121,-,2014,b,Japan
+"Yellowtail, young, fresh",1,13,-,-,-,13,-,-,-,127,-,-,-,0.2,-,-,-,153,-,2020,n,Japan
+Fruits,,,,,,,,,,,,,,,,,,,,,,
+"Avocado, raw",1,11,-,-,-,7.5,-,-,-,0.3,-,-,-,0,-,-,-,18,-,2014,b,Japan
+"Bananas, raw",1,1.2,-,-,-,1.7,-,-,-,0.1,-,-,-,0,-,-,-,3.0,-,2014,b,Japan
+Goji berry,1,1.2,-,-,-,2.8,-,-,-,0.9,-,-,-,0.6,-,-,-,5.5,-,2020,n,Japan
+"Strawberries, raw",1,0.5,-,-,-,1.2,-,-,-,0.5,-,-,-,0,-,-,-,2.2,-,2014,b,Japan
+"Lamb, veal, and game (other than organs)",,,,,,,,,,,,,,,,,,,,,,
+"Mutton, raw",2,18,-,18,18,11,-,11,11,67,-,65,68,ND,-,ND,ND,95,-,2014,b,Japan
+"Whale, raw",2,16,-,14,19,9.1,-,6,12,74,-,68,80,ND,-,ND,ND,99,-,2014,b,Japan
+Legumes and legume products,,,,,,,,,,,,,,,,,,,,,,
+Bean curd lees (Okara),1,15,-,-,-,24,-,-,-,4.5,-,-,-,5.0,-,-,-,49,-,2014,b,Japan
+"Beans, adzuki, dried, raw",1,34,-,-,-,44,-,-,-,0,-,-,-,0,-,-,-,78,-,2014,b,Japan
+"Broad beans, dried, raw",1,14,-,-,-,20,-,-,-,1.3,-,-,-,0.2,-,-,-,36,-,2014,b,Japan
+"Chickpeas (garbanzo beans), no further specified",1,6.4,-,-,-,17,-,-,-,1.5,-,-,-,1.7,-,-,-,26,-,2020,n,Japan
+Miso,2,1.8,-,0.0,3.6,17,-,16,18,33,-,29,37,4.2,-,3.0,5.4,56,-,2014,b,Japan
+"Peanuts, raw",1,19,-,-,-,29,-,-,-,0,-,-,-,1.6,-,-,-,49,-,2014,b,Japan
+"Peas, green",1,5.7,-,-,-,14,-,-,-,0.5,-,-,-,2.0,-,-,-,22,-,2020,n,Japan
+"Peas, red, dried",1,7.2,-,-,-,16,-,-,-,1.0,-,-,-,0.9,-,-,-,25,-,2020,n,Japan
+Soy milk,1,7.7,-,-,-,12,-,-,-,2.5,-,-,-,0.01,-,-,-,22,-,2014,b,Japan
+"Soy protein concentrate, produced by acid wash",1,92,-,-,-,99,-,-,-,0,-,-,-,1.5,-,-,-,192,0,2010,f,Czech Republic
+Soy sauce made from soy and wheat (shoyu),2,0.4,-,0,0.7,3.8,-,2.5,5.0,31,-,29,34,15,-,9.0,21,50,-,2014,b,Japan
+"Soybean, black, dried",1,22,-,-,-,43,-,-,-,0.9,-,-,-,1.5,-,-,-,67,-,2020,n,Japan
+"Soybean, fermented (Natto)",1,41,-,-,-,51,-,-,-,6.8,-,-,-,15,-,-,-,114,-,2014,b,Japan
+"Soybeans, dried, raw",1,74,-,-,-,98,-,-,-,0,-,-,-,0,-,-,-,173,-,2014,b,Japan
+Tofu (Kinu),1,7.6,-,-,-,11,-,-,-,0.5,-,-,-,0.7,-,-,-,20,-,2014,b,Japan
+"Tofu, boiled 3 minutes",1,13,-,-,-,8.8,-,-,-,0,-,-,-,0.02,-,-,-,22,-,2014,b ,Japan
+"Tofu, boiled 5 minutes",1,15,-,-,-,19,-,-,-,0.7,-,-,-,0.7,-,-,-,36,-,2008,d,Japan
+"Tofu, deep-fried",1,20,-,-,-,32,-,-,-,0.5,-,-,-,1.2,-,-,-,54,-,2014,b,Japan
+"Tofu, dried-frozen (koyadofu)",1,120,-,-,-,168,-,-,-,0.6,-,-,-,3.7,-,-,-,292,-,2014,b,Japan
+"Tofu, raw (nigari)",1,14,-,-,-,17,-,-,-,0.4,-,-,-,0,-,-,-,31,-,2014,b,Japan
+Nuts and seeds,,,,,,,,,,,,,,,,,,,,,,
+Almonds,1,14,-,-,-,14,-,-,-,2.3,-,-,-,1.7,-,-,-,31,-,2014,b,Japan
+Chia seeds,1,21,-,-,-,35,-,-,-,0,-,-,-,2.1,-,-,-,59,-,2020,n,Japan
+Walnuts,1,9.8,-,-,-,9.8,-,-,-,0,-,-,-,0,-,-,-,20,-,2020,n,Japan
+Pork organ products,,,,,,,,,,,,,,,,,,,,,,
+"Pate, liver",1,26,-,-,-,30,-,-,-,15,-,-,-,9.1,-,-,-,80,-,2014,b,Japan
+"Pork heart, raw",1,39,-,-,-,24,-,-,-,56,-,-,-,0,-,-,-,119,-,2014,b,Japan
+"Pork kidney, raw",1,65,-,-,-,77,-,-,-,53,-,-,-,0,-,-,-,195,-,2014,b,Japan
+"Pork liver, raw",1,81,-,-,-,103,-,-,-,34,-,-,-,67,-,-,-,285,-,2014,b,Japan
+"Pork tongue, raw",1,24,-,-,-,21,-,-,-,59,-,-,-,0,-,-,-,104,-,2014,b,Japan
+Pork (other than organs),,,,,,,,,,,,,,,,,,,,,,
+"Pork neck, raw",1,15,-,-,-,12,-,-,-,44,-,-,-,0,-,-,-,71,-,2014,b,Japan
+"Pork ribs, raw",1,14,-,-,-,11,-,-,-,52,-,-,-,0,-,-,-,76,-,2014,b,Japan
+"Pork rump, raw",1,20,-,-,-,15,-,-,-,78,-,-,-,0,-,-,-,113,-,2014,b,Japan
+"Pork shoulder, raw",4,18,1.3,16,22,13,1.3,11,17,62,6.8,53,69,0,0,0,0,94,-,2014,b,Japan
+"Pork sirloin, raw",1,18,-,-,-,12,-,-,-,61,-,-,-,0,-,-,-,91,-,2014,b,Japan
+"Pork tenderloin, raw",1,23,-,-,-,15,-,-,-,82,-,-,-,0,-,-,-,120,-,2014,b,Japan
+Poultry organ products,,,,,,,,,,,,,,,,,,,,,,
+"Chicken gizzard, raw",1,46,-,-,-,51,-,-,-,40,-,-,-,6.1,-,-,-,143,-,2014,b,Japan
+"Chicken heart, raw",1,33,-,-,-,41,-,-,-,12,-,-,-,138,-,-,-,224,-,2014,b,Japan 
+"Chicken liver, raw",2,119,-,116.7,121.6,152,-,151.1,152.9,ND4,-,-,-,31,-,23,40,303,51 5,"2014, 2017","b,f","Japan, Czech Republic "
+Foie gras,1,21,-,-,-,36,-,-,-,1.8,-,-,-,23,-,-,-,82,-,2020,n,Japan
+Poultry (other than organs),,,,,,,,,,,,,,,,,,,,,,
+"Chicken breast, raw",1,21,-,-,-,21,-,-,-,98,-,-,-,1.0,-,-,-,141,-,2014,b,Japan
+"Chicken leg, raw",2,24,-,21,27,22,-,20,25,71,-,66,76,1.2,-,0,2.5,118,2.1 5,"2014, 2017","b,f","Japan, Czech Republic "
+"Chicken skin, raw",1,49,-,-,-,44,-,-,-,27,-,-,-,ND,-,-,-,120,-,2014,b,Japan
+"Chicken wing, raw",1,28,-,-,-,17,-,-,-,93,-,-,-,0,-,-,-,138,-,2014,b,Japan
+"Chicken, light meat, raw",2,22,-,17,27,19,-,17,22,67,-,23,110,3.4,-,0,6.7,111,-,2014,b,Japan
+Sausages and luncheon meats,,,,,,,,,,,,,,,,,,,,,,
+Corned beef,1,8.1,-,-,-,6.0,-,-,-,31,-,-,-,1.5,-,-,-,47,-,2014,b,Japan
+Frankfurter,1,8.1,-,-,-,7.6,-,-,-,33,-,-,-,1.5,-,-,-,50,-,2014,b,Japan
+"Ham, pressed and boneless types",2,9.5,-,8.1,11,6.1,-,4.5,7.6,54,-,52,56,0,-,0,0,69,-,2014,b,Japan
+"Pork, bacon, unprepared",1,12,-,-,-,6.0,-,-,-,44,-,-,-,ND,-,-,-,62,-,2014,b,Japan
+Prosciutto (Parma ham),1,23,-,-,-,23,-,-,-,92,-,-,-,0,-,-,-,138,-,2014,b,Japan
+Salami,1,16,-,-,-,14,-,-,-,83,-,-,-,7.6,-,-,-,120,-,2014,b,Japan
+"Sausage, Vienna type",1,6.8,-,-,-,6.0,-,-,-,33,-,-,-,ND,-,-,-,46,-,2014,b,Japan
+"Soups, sauces, and seasonings",,,,,,,,,,,,,,,,,,,,,,
+Cayenne pepper powder,1,6.0,-,-,-,12,-,-,-,2.3,-,-,-,ND,-,-,-,20,-,2020,n,Japan
+Curry roux,1,3.2,-,-,-,7.1,-,-,-,4.9,-,-,-,0.8,-,-,-,16,-,2020,n,Japan
+Ketchup,1,6.1,-,-,-,4.1,-,-,-,0.4,-,-,-,0,-,-,-,11,-,2020,n,Japan
+Mayonnaise,1,0.2,-,-,-,0.4,-,-,-,0,-,-,-,0,-,-,-,0.6,-,2020,n,Japan
+Mirin (cooking wine),1,0,-,-,-,0.2,-,-,-,0.5,-,-,-,0.5,-,-,-,1.2,-,2020,n,Japan
+Mustard ,1,9.3,-,-,-,16,-,-,-,0,-,-,-,0.1,-,-,-,25,-,2020,n,Japan
+"Rice malt, salted",1,0.3,-,-,-,6.2,-,-,-,7.4,-,-,-,0,-,-,-,14,-,2020,n,Japan
+Sake lees,1,19,-,-,-,44,-,-,-,20,-,-,-,7.5,-,-,-,89,-,2020,n,Japan
+"Sauce, barbecue",1,0.1,-,-,-,0,-,-,-,15,-,-,-,0.2,-,-,-,15,-,2014,b,Japan
+"Sauce, chili bean, Chinese ",1,3.0,-,-,-,3.5,-,-,-,1.1,-,-,-,1.2,-,-,-,8.8,-,2020,n,Japan
+"Sauce, fish",1,0,-,-,-,0.8,-,-,-,82,-,-,-,10,-,-,-,93,-,2014,b,Japan
+"Sauce, oyster",1,13,-,-,-,23,-,-,-,87,-,-,-,11,-,-,-,134,-,2014,b,Japan
+"Soup, Chinese soup type, powdered",1,15,-,-,-,17,-,-,-,141,-,-,-,12,-,-,-,186,-,2014,b,Japan
+"Soup, clam chowder type, powdered",1,5.6,-,-,-,13,-,-,-,28,-,-,-,0.6,-,-,-,47,-,2014,b,Japan
+"Soup, consommé type, powdered",1,18,-,-,-,83,-,-,-,73,-,-,-,5.8,-,-,-,180,-,2014,b,Japan
+"Soup, matsutake type, powdered",1,5.7,-,-,-,113,-,-,-,114,-,-,-,1.2,-,-,-,234,-,2014,b,Japan
+"Soup, potage type, powdered",1,8.1,-,-,-,6.6,-,-,-,21,-,-,-,1.8,-,-,-,38,-,2014,b,Japan
+"Soup, ramen noodle, dry",1,4.7,-,-,-,9.9,-,-,-,17,-,-,-,1.5,-,-,-,33,-,2014,b,Japan
+"Soup, stock, Chinese, dried",1,8.5,-,-,-,27,-,-,-,456,-,-,-,18,-,-,-,509,-,2020,n,Japan
+"Umami broth, powdered",1,6.8,-,-,-,20,-,-,-,657,-,-,-,1.5,-,-,-,685,-,2014,b,Japan
+Wasabi,1,0.4,-,-,-,0.2,-,-,-,0.1,-,-,-,0,-,-,-,0.7,-,2020,n,Japan
+"Yeast, dried",1,409,-,-,-,423,-,-,-,15,-,-,-,ND,-,-,-,847,-,2020,n,Japan
+Sweets,,,,,,,,,,,,,,,,,,,,,,
+Chocolate,1,3.6,-,-,-,4.4,-,-,-,0.1,-,-,-,ND,-,-,-,8.1,-,2020,n,Japan
+Honey,1,0.7,-,-,-,0.1,-,-,-,0,-,-,-,0,-,-,-,0.8,-,2014,b,Japan
+Vegetables,,,,,,,,,,,,,,,,,,,,,,
+"Asparagus, raw6",2,12,-,3.6,21,18,-,4.8,31,2.8,-,1.7,3.8,0.2,-,0.1,0.3,33,-,2014,b,Japan
+"Balsam pear (goya), raw",1,3.5,-,-,-,4.3,-,-,-,1.1,-,-,-,1.0,-,-,-,10,-,2014,b,Japan
+"Bamboo shoots, raw6",2,19,-,13,25,26,-,17,35,1.8,-,0.7,2.8,0.5,-,0.4,0.6,47,-,2014,b,Japan
+"Bean sprouts, with bean, raw",1,28,-,-,-,28,-,-,-,0,-,-,-,1.1,-,-,-,57,-,2014,b,Japan
+"Bean sprouts, without bean, raw",1,14,-,-,-,14,-,-,-,3.2,-,-,-,3.5,-,-,-,35,,2014,b,Japan
+Brassicaceae (blossom),1,9.8,-,-,-,16,-,-,-,0.5,-,-,-,0.5,-,-,-,27,-,2020,n,Japan
+"Broccoli sprouts, raw",1,60,-,-,-,57,-,-,-,8.1,-,-,-,4.8,-,-,-,130,-,2014,b,Japan
+"Broccoli, boiled",1,21,-,-,-,29,-,-,-,1.9,-,-,-,0.7,-,-,-,52,-,2008,d,Japan
+"Broccoli, raw",1,25,-,-,-,34,-,-,-,5.7,-,-,-,5.3,-,-,-,70,-,2014,b,Japan
+Burdock,1,1.8,-,-,-,3.3,-,-,-,0,-,-,-,0,-,-,-,5.1,-,2020,n,Japan
+"Cabbage, chinese (pak-choi), raw",1,2.6,-,-,-,2.9,-,-,-,1.2,-,-,-,0.3,-,-,-,7.0,-,2014,b,Japan
+"Cabbage, Chinese (qing-geng-cai)",1,3,-,-,-,7.8,-,-,-,1.3,-,-,-,0.3,-,-,-,12,-,2020,n,Japan
+"Cabbage, raw",1,1.3,-,-,-,1.7,-,-,-,0.2,-,-,-,0,-,-,-,3.2,-,2014,b,Japan
+"Carrots, raw",1,0.7,-,-,-,1.4,-,-,-,0,-,-,-,0,-,-,-,2.1,-,2014,b,Japan
+"Cauliflower, raw",1,27,-,-,-,30,-,-,-,ND,-,-,-,0,-,-,-,57,-,2014,b,Japan
+Coriander,1,12,-,-,-,25,-,-,-,1.6,-,-,-,0.6,-,-,-,39,-,2020,n,Japan
+"Corn, raw",1,4.7,-,-,-,6.9,-,-,-,0.1,-,-,-,0.1,-,-,-,12,-,2014,b,Japan
+"Cucumber, raw",1,4.2,-,-,-,5,-,-,-,0.1,-,-,-,0.1,-,-,-,9.4,-,2014,b,Japan
+"Eggplant, raw",1,11,-,-,-,32,-,-,-,6.6,-,-,-,1.6,-,-,-,51,-,2014,b,Japan
+Garland chrysanthemum,1,19,-,-,-,27,-,-,-,0.6,-,-,-,0.3,-,-,-,47,-,2020,n,Japan
+"Garlic chives (nira), raw",1,9.4,-,-,-,8.5,-,-,-,1.4,-,-,-,0.1,-,-,-,19,-,2014,b,Japan
+"Garlic, raw",1,6.0,-,-,-,6.9,-,-,-,3.4,-,-,-,0.7,-,-,-,17,-,2014,b,Japan
+"Ginger root, raw",1,0.4,-,-,-,1.4,-,-,-,0,-,-,-,0.5,-,-,-,2.3,-,2014,b,Japan
+"Ginger, Japanese (myoga), raw",1,3.1,-,-,-,3.5,-,-,-,0.7,-,-,-,0.4,-,-,-,7.7,-,2014,b,Japan
+Green beans,1,2.2,-,-,-,4.6,-,-,-,0.1,-,-,-,0.6,-,-,-,7.5,-,2020,n,Japan
+Honewort,1,5.3,-,-,-,5.8,-,-,-,0.4,-,-,-,0,-,-,-,12,-,2020,n,Japan
+Konnyaku,1,0.1,-,-,-,0.3,-,-,-,0,-,-,-,0,-,-,-,0.4,-,2020,n,Japan
+"Leek, Japanese (negi), raw",1,12,-,-,-,27,-,-,-,2.6,-,-,-,0,-,-,-,41,-,2014,b,Japan
+Lettuce,1,1.2,-,-,-,3.2,-,-,-,0.3,-,-,-,0,-,-,-,4.7,-,2020,n,Japan
+Lotus root,1,0.2,-,-,-,0.1,-,-,-,0,-,-,-,0,-,-,-,0.3,-,2020,n,Japan
+Mizuna (potherb mustard),1,7.4,-,-,-,13,-,-,-,0.2,-,-,-,0.1,-,-,-,20,-,2020,n,Japan
+"Mushroom, bunapii, raw",1,12,-,-,-,12,-,-,-,3.2,-,-,-,3.0,-,-,-,31,-,2014,b,Japan
+"Mushroom, hatakeshimeji, raw",1,9.1,-,-,-,5.7,-,-,-,0.7,-,-,-,0.5,-,-,-,16,-,2014,b,Japan
+"Mushroom, Jew's ear, dried",1,55,-,-,-,93,-,-,-,7.9,-,-,-,0,-,-,-,156,-,2014,b,Japan
+"Mushroom, tsukuritake, raw",1,28,-,-,-,21,-,-,-,0,-,-,-,0,-,-,-,50,-,2014,b,Japan
+"Mushroom, usu-hiratake, raw",1,17,-,-,-,16,-,-,-,1.9,-,-,-,3.5,-,-,-,38,-,2014,b,Japan
+"Mushroom, white aragekikurage, raw",1,2.3,-,-,-,4.1,-,-,-,0.4,-,-,-,0.1,-,-,-,6.9,-,2014,b,Japan
+"Mushroom, white hiratake, raw",1,27,-,-,-,33,-,-,-,2.6,-,-,-,4.3,-,-,-,67,-,2014,b,Japan
+"Mushroom, yamabushitake, raw",1,12,-,-,-,21,-,-,-,0.7,-,-,-,0,-,-,-,34,-,2014,b,Japan
+"Mushroom, yanagimatsutake, raw",1,6.1,-,-,-,12,-,-,-,4.9,-,-,-,3.3,-,-,-,26,-,2014,b,Japan
+"Mushrooms, bunashimeji, raw",1,9.4,-,-,-,8,-,-,-,1.1,-,-,-,2.3,-,-,-,21,-,2014,b,Japan
+"Mushrooms, enoki, raw",1,30,-,-,-,20,-,-,-,0,-,-,-,0,-,-,-,49,-,2014,b,Japan
+"Mushrooms, eringi, raw",1,5.0,-,-,-,5.3,-,-,-,0.7,-,-,-,2.4,-,-,-,13,-,2014,b,Japan
+"Mushrooms, hiratake, raw",1,74,-,-,-,68,-,-,-,0,-,-,-,0,-,-,-,142,-,2014,b,Japan
+"Mushrooms, maitake, raw",1,47,-,-,-,39,-,-,-,7.9,-,-,-,4.4,-,-,-,99,-,2014,b,Japan
+"Mushrooms, nameko, raw",2,9.4,-,3.8,15,8.3,-,2.9,14,0.7,-,ND,1.4,0.7,-,0,1.4,19,-,2014,b,Japan
+"Mushrooms, shiitake, dried",2,168,-,133,203,133,-,98,168,5.8,-,0,12,4.8,-,0.5,9.1,312,-,2014,b,Japan
+"Mushrooms, shiitake, raw",4,8.6,1.1,5.5,11,10,2.1,7.6,13,3.2,1.3,0.5,6.1,1,0.4,0,2.1,23,-,2014,b,Japan
+"Mustard spinach, (komatsuna), mature, raw",1,4.2,-,-,-,6.3,-,-,-,0,-,-,-,0,-,-,-,11,-,2014,b,Japan
+"Mustard spinach, (komatsuna), young, raw",1,13,-,-,-,25,-,-,-,0,-,-,-,1.4,-,-,-,39,-,2014,b,Japan
+"Okra, raw",1,17,-,-,-,21,-,-,-,0.3,-,-,-,0.7,-,-,-,40,-,2014,b,Japan
+"Onions, raw",1,1.0,-,-,-,1.1,-,-,-,0.1,-,-,-,0,-,-,-,2.2,-,2014,b,Japan
+"Paprika, red",1,0.3,-,-,-,0.6,-,-,-,0.1,-,-,-,0.1,-,-,-,1.1,-,2020,n,Japan
+"Parsley, fresh",1,122,-,-,-,135,-,-,-,32,-,-,-,0,-,-,-,289,-,2014,b,Japan
+"Parsley, Japanese",1,6.5,-,-,-,12,-,-,-,0.3,-,-,-,0.1,-,-,-,19,-,2020,n,Japan
+"Peas, green, canned",1,6.8,-,-,-,12,-,-,-,0,-,-,-,ND,-,-,-,19,-,2014,b,Japan
+"Peas, podded",1,2.4,-,-,-,7.5,-,-,-,0,-,-,-,0.5,-,-,-,10,-,2020,n,Japan
+"Pepper, green",1,0.7,-,-,-,1.3,-,-,-,0.2,-,-,-,0.1,-,-,-,2.3,-,2020,n,Japan
+"Pepper, green, pickled",1,0.7,-,-,-,1.8,-,-,-,0.4,-,-,-,0.2,-,-,-,3.1,-,2020,n,Japan
+"Pepper, red (capsicum)",1,1.9,-,-,-,3.0,-,-,-,0.2,-,-,-,ND,-,-,-,5.1,-,2020,n,Japan
+"Pepper, red green",1,0.2,-,-,-,0.6,-,-,-,0.1,-,-,-,0,-,-,-,0.9,-,2020,n,Japan
+"Pepper, sweet, green, raw",1,16,-,-,-,36,-,-,-,7.0,-,-,-,11,-,-,-,69,-,2014,b,Japan
+"Perilla leaves, shiso, raw",1,19,-,-,-,19,-,-,-,3.1,-,-,-,0.2,-,-,-,42,-,2014,b,Japan
+"Potato, raw",1,2.1,-,-,-,4.2,-,-,-,0.2,-,-,-,0,-,-,-,6.5,-,2014,b,Japan
+"Pumpkin, raw",1,23,-,-,-,29,-,-,-,1.9,-,-,-,2.5,-,-,-,57,-,2014,b,Japan
+"Radish leaf, Japanese",1,14,-,-,-,19,-,-,-,0.3,-,-,-,0,-,-,-,34,-,2020,n,Japan
+"Radish root, Japanese",1,0.8,-,-,-,0.9,-,-,-,0,-,-,-,0,-,-,-,1.7,-,2020,n,Japan
+"Radish sprouts, white, raw",1,34,-,-,-,29,-,-,-,6.4,-,-,-,3.5,-,-,-,73,-,2014,b,Japan
+"Seaweed, hijiki, dried",1,31,-,-,-,77,-,-,-,25,-,-,-,0,-,-,-,133,-,2014,b,Japan
+"Seaweed, kombu, dried",1,18,-,-,-,22,-,-,-,4.7,-,-,-,1.9,-,-,-,46,-,2014,b,Japan
+"Seaweed, mozuku, dried",1,5.6,-,-,-,9.4,-,-,-,0.5,-,-,-,0,-,-,-,16,-,2014,b,Japan
+"Seaweed, nori, dried",1,216,-,-,-,299,-,-,-,73,-,-,-,3.2,-,-,-,592,-,2014,b,Japan
+"Seaweed, wakame, raw",1,68,-,-,-,148,-,-,-,47,-,-,-,0,-,-,-,262,-,2014,b,Japan
+Sesame,1,13,-,-,-,22,-,-,-,0.3,-,-,-,0.8,-,-,-,36,-,2020,n,Japan
+"Soybeans, green, raw",1,21,-,-,-,27,-,-,-,0,-,-,-,0,-,0,0,48,-,2014,b,Japan
+"Spinach, boiled",1,19,-,-,-,14,-,-,-,0,-,-,-,6.6,-,0,0,39,-,2008,d,Japan
+"Spinach, mature, raw",1,30,-,-,-,14,-,-,-,0,-,-,-,7.7,-,-,-,51,-,2014,b,Japan
+"Spinach, young, raw",1,84,-,-,-,88,-,-,-,0,-,-,-,0,-,-,-,172,-,2014,b,Japan
+"Squash, zucchini, raw",1,5.0,-,-,-,6.3,-,-,-,1.0,-,-,-,0.8,-,-,-,13,-,2014,b,Japan
+"Sweet potato, raw",1,6.7,-,-,-,7.3,-,-,-,2.4,-,-,-,0.6,-,-,-,17,-,2014,b,Japan
+Taro  ,1,0.6,-,-,-,1.0,-,-,-,0.2,-,-,-,0,-,-,-,1.8,-,2020,n,Japan
+"Tomatoes, cherry type, raw",1,1.6,-,-,-,1.5,-,-,-,0,-,-,-,0,-,-,-,3.1,-,2014,b,Japan
+"Tomatoes, no further specified",1,3.2,-,-,-,1.2,-,-,-,2.1,-,-,-,0.1,-,-,-,6.6,-,2020,n,Japan
+Turnip,1,1.4,-,-,-,2.3,-,-,-,0.2,-,-,-,0,-,-,-,3.9,-,2020,n,Japan
+"Yam, Japanese",1,1.7,-,-,-,2.1,-,-,-,0.2,-,-,-,0,-,-,-,4.0,-,2020,n,Japan
+"Vegetarian meat, fish, and egg alternatives",,,,,,,,,,,,,,,,,,,,,,
+"‘Bacon', meatless",2,32,-,28,36,36,-,31,41,5.8,-,3.7,7.8,1.0,-,0.3,1.8,74,0,2010,f,Great Britain
+"‘Chicken', meatless",2,38,-,36,39,37,-,34,40,2.6,-,1.0,4.2,0,-,0,0,77,0,2010,f,Great Britain
+"‘Frankfurter', meatless",2,12,-,8.2,16,16,-,13,20,3.7,-,1.4,5.9,0.2,-,0,0.3,32,2.1,2010,f,Great Britain
+"‘Sausage', meatless",9,21,4.2,6.4,40,23,3.7,9.3,36,1.8,0.6,0,4.8,0.3,0.2,0,1.3,46,0,2010,f,"Czech Republic, Great Britain"
+‘Vegetarian 'gizzard' from soy,1,0.1,-,-,-,0.2,-,-,-,0,-,-,-,0,-,-,-,0.3,0,2010,f,Vietnam
+Egg white schnitzel (vegetarian ‘steak’),1,0.5,-,-,-,14,-,-,-,18,-,-,-,7.0,-,-,-,39,0.9,2010,f,Czech Republic
+"Ham style vegetarian slices, from mycoprotein",1,47,-,-,-,57,-,-,-,13,-,-,-,0.6,-,-,-,117,0,2010,f,Great Britain
+Instant-vegetarian dried 'deer' from soy,1,46,-,-,-,52,-,-,-,15,-,-,-,2.4,-,-,-,116,0,2010,f,Vietnam
+Instant-vegetarian dried 'fish' from soy,1,38,-,-,-,50,-,-,-,0,-,-,-,0,-,-,-,89,0,2010,f,Vietnam
+"Luncheon slices, meatless",2,47,-,8.6,86,50,-,12,89,0,-,0,0,0.7,-,0,1.4,98,0,2010,f,Great Britain
+Tofu burger,1,46,-,-,-,56,-,-,-,0,-,-,-,0,-,-,-,103,0,2010,f,Czech Republic
+Vegetarian 'Ba Sa fish' from soy,1,20,-,-,-,43,-,-,-,19,-,-,-,0.6,-,-,-,83,0,2010,f,Vietnam
+Vegetarian 'meatloaf' or patties,2,20,-,15,24,21,-,16,25,1.2,-,1.0,1.5,0.2,-,0,0.3,42,0,2010,f,"Czech Republic, Great Britain"
+Vegetarian 'quail's eggs',1,0,-,-,-,0.04,-,-,-,0,-,-,-,0,-,-,-,0.0,0,2010,f,Vietnam
+Vegetarian 'steak' from wheat (Robi' schnitzels),1,8.7,-,-,-,12,-,-,-,0.2,-,-,-,0,-,-,-,21,0,2010,f,Czech Republic
+Vegetarian tender 'shrimp',1,0,-,-,-,0.06,-,-,-,0,-,-,-,0,-,-,-,0.1,0,2010,f,Vietnam
+"Veggie burgers or soyburgers, unprepared",7,30,6.5,17,66,32,5.6,21,60,2.6,1.2,0.0,8.2,0.5,0.2,0,1.0,65,0,2010,f,"Czech Republic, Great Britain"
+Vegi 'steak' from soy,1,27,-,-,-,34,-,-,-,0,-,-,-,0.7,-,-,-,62,0,2010,f,Czech Republic
+Vegideli fish style fingers ,1,31,-,-,-,36,-,-,-,0,-,-,-,0,-,-,-,67,0,2010,f,Great Britain
+ND = not detected,,,,,,,,,,,,,,,,,,,,,,
+*Data presented as wet weight and edible portion of material,,,,,,,,,,,,,,,,,,,,,,
+1 Sources of data:,,,,,,,,,,,,,,,,,,,,,,
+"b - Kaneko, K.,et al. (2014).",,,,,,,,,,,,,,,,,,,,,,
+"c - Qu, X., et al. (2017). ",,,,,,,,,,,,,,,,,,,,,,
+"d - Kaneko, K.,et al. (2008). ",,,,,,,,,,,,,,,,,,,,,,
+"f - Havlik, J.,et al. (2010). ",,,,,,,,,,,,,,,,,,,,,,
+"n - Kaneko, K., et al. (2020)",,,,,,,,,,,,,,,,,,,,,,
+2 Analytical data or publications' origin; sample origin not necessarily specified,,,,,,,,,,,,,,,,,,,,,,
+"3 Food analyzed 3 times by Kaneko, K., et al., (2014) under different processing conditions; USDA combined data due to similar purine content",,,,,,,,,,,,,,,,,,,,,,
+"4 Sample ND by Kaneko, K., et al., (2014), and below limit of detection (<LOD, measured 0) in Havlik, J., et al., (2010)",,,,,,,,,,,,,,,,,,,,,,
+"5 Uric acid measured only in samples from Havlik, J., et al. (2010)",,,,,,,,,,,,,,,,,,,,,,
+"6 Food presented as two data sets (upper and lower stalk) in Kaneko, K., et al., (2014); USDA combined data to reflect consumption status",,,,,,,,,,,,,,,,,,,,,,
