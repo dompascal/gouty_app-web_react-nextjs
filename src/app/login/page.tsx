@@ -29,6 +29,8 @@ const formSchema = z.object({
 
 type AuthMode = 'signin' | 'signup';
 
+import PublicHeader from '@/components/layout/public-header';
+
 export default function LoginPage() {
   const router = useRouter();
   const { user, loading: userLoading } = useUser();
@@ -135,80 +137,83 @@ export default function LoginPage() {
   }
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-background p-8">
-      <div className="w-full max-w-sm space-y-6">
-        <div className="flex flex-col items-center space-y-2 text-center">
-          <Utensils className="h-12 w-12 text-primary" />
-          <h1 className="font-headline text-3xl font-bold">
-            {authMode === 'signin' ? 'Welcome to Gouty' : 'Create an Account'}
-          </h1>
-          <p className="text-muted-foreground">
-            {authMode === 'signin'
-              ? 'Sign in to track your food diary and manage your health.'
-              : 'Start your journey to better health today.'
-            }
+    <div className="flex min-h-screen flex-col bg-background">
+      <PublicHeader />
+      <main className="flex flex-1 flex-col items-center justify-center p-8">
+        <div className="w-full max-w-sm space-y-6">
+          <div className="flex flex-col items-center space-y-2 text-center">
+            <Utensils className="h-12 w-12 text-primary" />
+            <h1 className="font-headline text-3xl font-bold">
+              {authMode === 'signin' ? 'Welcome to Gouty' : 'Create an Account'}
+            </h1>
+            <p className="text-muted-foreground">
+              {authMode === 'signin'
+                ? 'Sign in to track your food diary and manage your health.'
+                : 'Start your journey to better health today.'
+              }
+            </p>
+          </div>
+
+          <Form {...form}>
+            <form onSubmit={form.handleSubmit(handleEmailAuth)} className="space-y-4">
+              <FormField
+                control={form.control}
+                name="email"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Email</FormLabel>
+                    <FormControl>
+                      <Input placeholder="name@example.com" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="password"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Password</FormLabel>
+                    <FormControl>
+                      <Input type="password" placeholder="••••••••" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <Button type="submit" className="w-full" disabled={isPending}>
+                {isPending
+                  ? 'Processing...'
+                  : (authMode === 'signin' ? 'Sign In' : 'Create Account')
+                }
+              </Button>
+            </form>
+          </Form>
+
+          <div className="relative">
+            <div className="absolute inset-0 flex items-center">
+              <span className="w-full border-t" />
+            </div>
+            <div className="relative flex justify-center text-xs uppercase">
+              <span className="bg-background px-2 text-muted-foreground">
+                Or continue with
+              </span>
+            </div>
+          </div>
+
+          <Button onClick={handleGoogleSignIn} variant="outline" className="w-full" disabled={isPending}>
+            Sign In with Google
+          </Button>
+
+          <p className="px-8 text-center text-sm text-muted-foreground">
+            {authMode === 'signin' ? "Don't have an account? " : "Already have an account? "}
+            <button onClick={toggleAuthMode} className="underline underline-offset-4 hover:text-primary">
+              {authMode === 'signin' ? 'Sign Up' : 'Sign In'}
+            </button>
           </p>
         </div>
-
-        <Form {...form}>
-          <form onSubmit={form.handleSubmit(handleEmailAuth)} className="space-y-4">
-            <FormField
-              control={form.control}
-              name="email"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Email</FormLabel>
-                  <FormControl>
-                    <Input placeholder="name@example.com" {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name="password"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Password</FormLabel>
-                  <FormControl>
-                    <Input type="password" placeholder="••••••••" {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <Button type="submit" className="w-full" disabled={isPending}>
-              {isPending
-                ? 'Processing...'
-                : (authMode === 'signin' ? 'Sign In' : 'Create Account')
-              }
-            </Button>
-          </form>
-        </Form>
-
-        <div className="relative">
-          <div className="absolute inset-0 flex items-center">
-            <span className="w-full border-t" />
-          </div>
-          <div className="relative flex justify-center text-xs uppercase">
-            <span className="bg-background px-2 text-muted-foreground">
-              Or continue with
-            </span>
-          </div>
-        </div>
-
-        <Button onClick={handleGoogleSignIn} variant="outline" className="w-full" disabled={isPending}>
-          Sign In with Google
-        </Button>
-
-        <p className="px-8 text-center text-sm text-muted-foreground">
-          {authMode === 'signin' ? "Don't have an account? " : "Already have an account? "}
-          <button onClick={toggleAuthMode} className="underline underline-offset-4 hover:text-primary">
-            {authMode === 'signin' ? 'Sign Up' : 'Sign In'}
-          </button>
-        </p>
-      </div>
-    </main>
+      </main>
+    </div>
   );
 }

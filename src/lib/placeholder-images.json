@@ -3,25 +3,25 @@
     {
       "id": "seafood",
       "description": "A close-up of a grilled fish with lemon slices",
-      "imageUrl": "https://images.unsplash.com/photo-1600175074394-f2f4c500f7ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxncmlsbGVkJTIwZmlzaHxlbnwwfHx8fDE3Njg2NzkyNTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1576330383200-2bf325cfec52?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&q=80&w=1080",
       "imageHint": "grilled fish"
     },
     {
       "id": "grains",
       "description": "A wooden bowl filled with various types of grains",
-      "imageUrl": "https://images.unsplash.com/photo-1765144815957-6bc44c13fc2c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhc3NvcnRlZCUyMGdyYWluc3xlbnwwfHx8fDE3Njg3MzY5OTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1621956838481-f8f616950454?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JhaW5zfGVufDB8fDB8fHww&q=80&w=1080",
       "imageHint": "assorted grains"
     },
     {
       "id": "nuts",
       "description": "A mix of almonds, walnuts, and cashews in a bowl",
-      "imageUrl": "https://images.unsplash.com/photo-1542990253-a781e04c0082?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtaXhlZCUyMG51dHN8ZW58MHx8fHwxNzY4NjM3MTUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1543158181-1274e5362710?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&q=80&w=1080",
       "imageHint": "mixed nuts"
     },
     {
       "id": "fruits",
       "description": "A colorful arrangement of fresh fruits on a table",
-      "imageUrl": "https://images.unsplash.com/photo-1601379760607-78be3d4ff432?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmcmVzaCUyMGZydWl0fGVufDB8fHx8MTc2ODczNjk5MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJlc2glMjBmcnVpdHxlbnwwfHwwfHx8MA%3D%3D&q=80&w=1080",
       "imageHint": "fresh fruit"
     },
     {
