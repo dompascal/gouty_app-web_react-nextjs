@@ -5,6 +5,8 @@ import { DiaryTable } from '@/components/diary/diary-table';
 import { useDiaryEntries } from '@/hooks/use-diary-entries';
 
 
+import { AddCustomEntryDialog } from '@/components/diary/add-custom-entry-dialog';
+
 export default function DiaryPage() {
   const { user, userLoading, diaryEntries, entriesLoading } = useDiaryEntries();
 
@@ -26,13 +28,16 @@ export default function DiaryPage() {
 
   return (
     <div className="space-y-8">
-      <header className="space-y-2">
-        <h1 className="font-headline text-3xl font-bold tracking-tight md:text-4xl">
-          My Food Diary
-        </h1>
-        <p className="text-lg text-muted-foreground">
-          A log of your daily food intake to help you manage purine levels.
-        </p>
+      <header className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
+        <div className="space-y-2">
+          <h1 className="font-headline text-3xl font-bold tracking-tight md:text-4xl">
+            My Food Diary
+          </h1>
+          <p className="text-lg text-muted-foreground">
+            A log of your daily food intake to help you manage purine levels.
+          </p>
+        </div>
+        <AddCustomEntryDialog />
       </header>
       <div>
         {!diaryEntries || diaryEntries.length === 0 ? (

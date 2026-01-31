@@ -2,10 +2,10 @@
 
 import { useEffect, useState, useTransition } from 'react';
 import { useRouter } from 'next/navigation';
-import { 
-  GoogleAuthProvider, 
-  signInWithRedirect, 
-  getRedirectResult, 
+import {
+  GoogleAuthProvider,
+  signInWithRedirect,
+  getRedirectResult,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
 } from 'firebase/auth';
@@ -38,6 +38,8 @@ export default function LoginPage() {
   const [isPending, startTransition] = useTransition();
   const [authMode, setAuthMode] = useState<AuthMode>('signin');
 
+  const [isCheckingRedirect, setIsCheckingRedirect] = useState(true);
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -47,38 +49,39 @@ export default function LoginPage() {
   });
 
   useEffect(() => {
-    if (user) {
+    if (user && !isCheckingRedirect) {
       router.push('/dashboard');
     }
-  }, [user, router]);
-  
+  }, [user, router, isCheckingRedirect]);
+
   // We need to use a transition to check the redirect result so we can show a loading state
   // This is because getRedirectResult can take a moment to resolve.
   useEffect(() => {
     startTransition(() => {
-        if (user) return; // Don't run if user is already loaded.
-
-        getRedirectResult(auth)
+      getRedirectResult(auth)
         .then((result) => {
-            if (result?.user) {
+          if (result?.user) {
             upsertUserProfile(firestore, result.user);
             toast({
-                title: 'Signed in successfully!',
-                description: `Welcome back, ${result.user.displayName}.`,
+              title: 'Signed in successfully!',
+              description: `Welcome back, ${result.user.displayName}.`,
             });
             // The main useEffect will handle the redirect.
-            }
+          }
         })
         .catch((error) => {
-            console.error('Error handling redirect result:', error);
-            toast({
+          console.error('Error handling redirect result:', error);
+          toast({
             variant: 'destructive',
             title: 'Sign-in failed',
             description: error.message || 'An unexpected error occurred during sign-in.',
-            });
+          });
+        })
+        .finally(() => {
+          setIsCheckingRedirect(false);
         });
     });
-  }, [auth, toast, user, firestore]);
+  }, [auth, toast, firestore]);
 
 
   const handleGoogleSignIn = async () => {
@@ -123,7 +126,7 @@ export default function LoginPage() {
     form.reset();
   };
 
-  if (userLoading || isPending || user) {
+  if (userLoading || isPending || (user && !isCheckingRedirect) || isCheckingRedirect) {
     return (
       <div className="flex min-h-screen flex-col items-center justify-center">
         <Utensils className="h-12 w-12 animate-pulse text-primary" />
@@ -140,7 +143,7 @@ export default function LoginPage() {
             {authMode === 'signin' ? 'Welcome to Gouty' : 'Create an Account'}
           </h1>
           <p className="text-muted-foreground">
-            {authMode === 'signin' 
+            {authMode === 'signin'
               ? 'Sign in to track your food diary and manage your health.'
               : 'Start your journey to better health today.'
             }
@@ -176,8 +179,8 @@ export default function LoginPage() {
               )}
             />
             <Button type="submit" className="w-full" disabled={isPending}>
-              {isPending 
-                ? 'Processing...' 
+              {isPending
+                ? 'Processing...'
                 : (authMode === 'signin' ? 'Sign In' : 'Create Account')
               }
             </Button>
@@ -198,7 +201,7 @@ export default function LoginPage() {
         <Button onClick={handleGoogleSignIn} variant="outline" className="w-full" disabled={isPending}>
           Sign In with Google
         </Button>
-        
+
         <p className="px-8 text-center text-sm text-muted-foreground">
           {authMode === 'signin' ? "Don't have an account? " : "Already have an account? "}
           <button onClick={toggleAuthMode} className="underline underline-offset-4 hover:text-primary">
